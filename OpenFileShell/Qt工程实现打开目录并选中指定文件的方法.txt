@@ -1,0 +1,19 @@
+项目中需要打开收到的彩信附件目录，并在目录中将该附件选中但不打开。
+看似简单的一个问题，花了不少时间。
+网上找了很久，也参考过不少答案，但都有一些问题，不能完全达到想要的效果。几经折腾，终于捣鼓出来了，分享如下：
+ 
+首先，QT工程必须在pro文件中加入 
+ 
+LIBS += -lshell32
+ 
+加入shell32.lib文件，否则工程会报连接出错；
+然后在需要用到该功能的头文件里引入两个系统头文件
+#include <Windows.h>
+#include <ShellAPI.h>
+ 
+最后调用shellExecuteA方法
+LPCSTR filePath = " /select,D:\\z1_学习资料\\Qt\\Qt学习之路.pdf";
+ShellExecuteA(0,"open","explorer.exe",filePath,NULL,true);
+ 
+注意加上 /select，否则会直接打开该文件。
+如此大功告成。
