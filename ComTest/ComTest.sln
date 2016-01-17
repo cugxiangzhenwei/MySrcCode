@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComTest", "ComTest\ComTest.vcproj", "{E97CC07A-9DFB-40DC-84D4-DABC7C7EB7B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComCall", "ComCall\ComCall.vcproj", "{D44B1AF6-011D-4F3B-BAF1-F09C348AE750}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E97CC07A-9DFB-40DC-84D4-DABC7C7EB7B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E97CC07A-9DFB-40DC-84D4-DABC7C7EB7B7}.Debug|Win32.Build.0 = Debug|Win32
+		{E97CC07A-9DFB-40DC-84D4-DABC7C7EB7B7}.Release|Win32.ActiveCfg = Release|Win32
+		{E97CC07A-9DFB-40DC-84D4-DABC7C7EB7B7}.Release|Win32.Build.0 = Release|Win32
+		{D44B1AF6-011D-4F3B-BAF1-F09C348AE750}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D44B1AF6-011D-4F3B-BAF1-F09C348AE750}.Debug|Win32.Build.0 = Debug|Win32
+		{D44B1AF6-011D-4F3B-BAF1-F09C348AE750}.Release|Win32.ActiveCfg = Release|Win32
+		{D44B1AF6-011D-4F3B-BAF1-F09C348AE750}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

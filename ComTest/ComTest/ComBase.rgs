@@ -1,0 +1,27 @@
+HKCR
+{
+	ComTest.ComBase.1 = s 'ComBase Class'
+	{
+		CLSID = s '{775DE05F-1EA2-4E29-A13B-0E93D673C8F8}'
+	}
+	ComTest.ComBase = s 'ComBase Class'
+	{
+		CLSID = s '{775DE05F-1EA2-4E29-A13B-0E93D673C8F8}'
+		CurVer = s 'ComTest.ComBase.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {775DE05F-1EA2-4E29-A13B-0E93D673C8F8} = s 'ComBase Class'
+		{
+			ProgID = s 'ComTest.ComBase.1'
+			VersionIndependentProgID = s 'ComTest.ComBase'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{F6EE483C-5653-4154-96A8-DFDED69652B9}'
+		}
+	}
+}
