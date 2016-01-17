@@ -1,0 +1,56 @@
+// SimpleNsExt.idl : IDL source for SimpleNsExt.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SimpleNsExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(68DBA4F0-A70F-4BD2-883C-8E765415E136),
+	
+		helpstring("IShellFolderImpl Interface"),
+		pointer_default(unique)
+	]
+	interface IShellFolderImpl : IUnknown
+	{
+	};
+	[
+		object,
+		uuid(0EA6B88C-6FC4-4DBC-AE9C-7D3BFE2C9FF9),
+	
+		helpstring("IShellViewImpl Interface"),
+		pointer_default(unique)
+	]
+	interface IShellViewImpl : IUnknown
+	{
+	};
+
+[
+	uuid(15428555-A5FB-467D-A2EB-3C31318CBBAF),
+	version(1.0),
+	helpstring("SimpleNsExt 1.0 Type Library")
+]
+library SIMPLENSEXTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(4145E10E-36DB-4F2C-9062-5DE1AF40BB31),
+		helpstring("ShellFolderImpl Class")
+	]
+	coclass ShellFolderImpl
+	{
+		[default] interface IShellFolderImpl;
+	};
+	[
+		uuid(2C045228-65B6-471D-AC39-65331112EA1A),
+		helpstring("ShellViewImpl Class")
+	]
+	coclass ShellViewImpl
+	{
+		[default] interface IShellViewImpl;
+	};
+};

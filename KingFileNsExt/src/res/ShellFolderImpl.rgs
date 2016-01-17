@@ -1,0 +1,47 @@
+HKCR
+{
+    NoRemove CLSID
+    {
+        ForceRemove {4145E10E-36DB-4F2C-9062-5DE1AF40BB31} = s '金山企业云'
+        {
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+            val InfoTip = s '金山企业云 '
+            DefaultIcon = s '%MODULE%,0'
+            ShellFolder
+            {
+                val Attributes = d '671088688'
+            }
+        }
+    }
+}
+HKLM
+{
+    NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Windows
+            {
+                NoRemove CurrentVersion
+                {
+                    NoRemove Explorer
+                    {
+                        NoRemove MyComputer
+                        {
+                            NoRemove NameSpace
+                            {
+                                ForceRemove {4145E10E-36DB-4F2C-9062-5DE1AF40BB31}
+                                {
+                                    val 'Removal Message' = s 'Your custom "Don''t delete me!" text goes here.'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
