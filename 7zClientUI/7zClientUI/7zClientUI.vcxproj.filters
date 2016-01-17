@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="7z接口封装">
+      <UniqueIdentifier>{9512bc20-5c67-4b10-a170-13042880e4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7z接口封装\common">
+      <UniqueIdentifier>{7345b5a2-56d2-4f9c-ac43-feaa1fb73bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7z接口封装\windows">
+      <UniqueIdentifier>{fa9e0328-88b4-42b8-992b-b53bf046a985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="7z接口封装\FileStream">
+      <UniqueIdentifier>{2880d784-94bc-4041-8c07-e819c7d5e6b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\My7zClientUI.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\7zClientUI.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\corona.smf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="7zClientUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CompressionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DCompressionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CLientUIMainDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7zInterface.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\ICoder.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\IDecl.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\IPassword.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\IProgress.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\IStream.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\PropID.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Types.h">
+      <Filter>7z接口封装</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Common\IntToString.h">
+      <Filter>7z接口封装\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Common\MyString.h">
+      <Filter>7z接口封装\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Common\MyVector.h">
+      <Filter>7z接口封装\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Common\StringConvert.h">
+      <Filter>7z接口封装\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Common\Wildcard.h">
+      <Filter>7z接口封装\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\FileStream\FileStreams.h">
+      <Filter>7z接口封装\FileStream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\DLL.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\FileDir.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\FileFind.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\FileIO.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\FileName.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\PropVariant.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Windows\PropVariantConversions.h">
+      <Filter>7z接口封装\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\7z\Common\SetProperties.h">
+      <Filter>7z接口封装\common</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSelectDlg.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTabCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="7zClientUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DCompressionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CLientUIMainDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7zInterface.cpp">
+      <Filter>7z接口封装</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Common\IntToString.cpp">
+      <Filter>7z接口封装\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Common\MyString.cpp">
+      <Filter>7z接口封装\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Common\MyVector.cpp">
+      <Filter>7z接口封装\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Common\StringConvert.cpp">
+      <Filter>7z接口封装\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Common\Wildcard.cpp">
+      <Filter>7z接口封装\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\FileStream\FileStreams.cpp">
+      <Filter>7z接口封装\FileStream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\DLL.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\FileDir.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\FileFind.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\FileIO.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\FileName.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\PropVariant.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\PropVariantConversions.cpp">
+      <Filter>7z接口封装\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\7z\Common\SetProperties.cpp">
+      <Filter>7z接口封装\common</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSelectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTabCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="7zClientUI.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

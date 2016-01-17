@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D2E8D4B-3872-4208-A844-CCB8468D2765}</ProjectGuid>
+    <RootNamespace>My7zClientUI</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)7z;$(SolutionDir)7z\Archive;$(SolutionDir)7z\Common;$(SolutionDir)7z\FileStream;$(SolutionDir)\SkinMagic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SkinMagic</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SkinMagic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)7z;$(SolutionDir)7z\Archive;$(SolutionDir)7z\Common;$(SolutionDir)7z\FileStream;$(SolutionDir)\SkinMagic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>SkinMagic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SkinMagic</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\7zClientUI.ico" />
+    <None Include="res\corona.smf" />
+    <None Include="res\My7zClientUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\7z\Common\IntToString.h" />
+    <ClInclude Include="..\7z\Common\MyString.h" />
+    <ClInclude Include="..\7z\Common\MyVector.h" />
+    <ClInclude Include="..\7z\Common\SetProperties.h" />
+    <ClInclude Include="..\7z\Common\StringConvert.h" />
+    <ClInclude Include="..\7z\Common\Wildcard.h" />
+    <ClInclude Include="..\7z\FileStream\FileStreams.h" />
+    <ClInclude Include="..\7z\ICoder.h" />
+    <ClInclude Include="..\7z\IDecl.h" />
+    <ClInclude Include="..\7z\IPassword.h" />
+    <ClInclude Include="..\7z\IProgress.h" />
+    <ClInclude Include="..\7z\IStream.h" />
+    <ClInclude Include="..\7z\PropID.h" />
+    <ClInclude Include="..\7z\Types.h" />
+    <ClInclude Include="..\7z\Windows\DLL.h" />
+    <ClInclude Include="..\7z\Windows\FileDir.h" />
+    <ClInclude Include="..\7z\Windows\FileFind.h" />
+    <ClInclude Include="..\7z\Windows\FileIO.h" />
+    <ClInclude Include="..\7z\Windows\FileName.h" />
+    <ClInclude Include="..\7z\Windows\PropVariant.h" />
+    <ClInclude Include="..\7z\Windows\PropVariantConversions.h" />
+    <ClInclude Include="7zClientUI.h" />
+    <ClInclude Include="7zInterface.h" />
+    <ClInclude Include="CompressionDlg.h" />
+    <ClInclude Include="DCompressionDlg.h" />
+    <ClInclude Include="CLientUIMainDlg.h" />
+    <ClInclude Include="FileSelectDlg.h" />
+    <ClInclude Include="MyTabCtrl.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\7z\Common\IntToString.cpp" />
+    <ClCompile Include="..\7z\Common\MyString.cpp" />
+    <ClCompile Include="..\7z\Common\MyVector.cpp" />
+    <ClCompile Include="..\7z\Common\SetProperties.cpp" />
+    <ClCompile Include="..\7z\Common\StringConvert.cpp" />
+    <ClCompile Include="..\7z\Common\Wildcard.cpp" />
+    <ClCompile Include="..\7z\FileStream\FileStreams.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\7z\Windows\DLL.cpp" />
+    <ClCompile Include="..\7z\Windows\FileDir.cpp" />
+    <ClCompile Include="..\7z\Windows\FileFind.cpp" />
+    <ClCompile Include="..\7z\Windows\FileIO.cpp" />
+    <ClCompile Include="..\7z\Windows\FileName.cpp" />
+    <ClCompile Include="..\7z\Windows\PropVariant.cpp" />
+    <ClCompile Include="..\7z\Windows\PropVariantConversions.cpp" />
+    <ClCompile Include="7zClientUI.cpp" />
+    <ClCompile Include="7zInterface.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CompressionDlg.cpp" />
+    <ClCompile Include="DCompressionDlg.cpp" />
+    <ClCompile Include="CLientUIMainDlg.cpp" />
+    <ClCompile Include="FileSelectDlg.cpp" />
+    <ClCompile Include="MyTabCtrl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="7zClientUI.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="7zClientUI.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
