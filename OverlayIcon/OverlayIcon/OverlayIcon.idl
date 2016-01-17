@@ -1,0 +1,34 @@
+// OverlayIcon.idl : OverlayIcon 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(OverlayIcon.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(EA10A1D3-E333-4895-AACF-BDEC40BF04F8),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMyOverlayIcon : IDispatch{
+};
+[
+	uuid(EE89AFBC-3299-44B4-871D-937E32249869),
+	version(1.0),
+]
+library OverlayIconLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(F17582D6-B77C-4EBA-B3EB-24D1D0003895)		
+	]
+	coclass MyOverlayIcon
+	{
+		[default] interface IMyOverlayIcon;
+	};
+};
+

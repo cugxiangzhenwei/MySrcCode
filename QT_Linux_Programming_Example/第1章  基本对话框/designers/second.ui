@@ -1,0 +1,44 @@
+<ui version="4.0" >
+ <class>Second</class>
+ <widget class="QWidget" name="Second" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>这是第二个 UI !!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closePushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>180</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>关闭</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

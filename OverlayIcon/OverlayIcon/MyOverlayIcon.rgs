@@ -1,0 +1,51 @@
+HKCR
+{
+	Cug.MyOverlayIcon.1 = s 'MyOverlayIcon Class'
+	{
+		CLSID = s '{F17582D6-B77C-4EBA-B3EB-24D1D0003895}'
+	}
+	Cug.MyOverlayIcon = s 'MyOverlayIcon Class'
+	{		
+		CurVer = s 'Cug.MyOverlayIcon.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F17582D6-B77C-4EBA-B3EB-24D1D0003895} = s 'MyOverlayIcon Class'
+		{
+			ProgID = s 'Cug.MyOverlayIcon.1'
+			VersionIndependentProgID = s 'Cug.MyOverlayIcon'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{EE89AFBC-3299-44B4-871D-937E32249869}'
+			Version = s '1.0'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 0MyOverlayIcon = s '{F17582D6-B77C-4EBA-B3EB-24D1D0003895}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+ }

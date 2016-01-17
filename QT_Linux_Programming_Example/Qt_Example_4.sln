@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fonts", "第4章  QMainWindow\fonts\fonts.vcproj", "{EDCE6609-882B-33E1-83AB-93A348BB0F87}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imgprocessor", "第4章  QMainWindow\imgprocessor\imgprocessor.vcproj", "{B298CAE9-F3C4-3D26-9983-E5B3123B358D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "listalign", "第4章  QMainWindow\listalign\listalign.vcproj", "{8D87C558-E0CC-3FC4-8AE0-CEEAA6A85357}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mainwindow", "第4章  QMainWindow\mainwindow\mainwindow.vcproj", "{231ADDC0-CD62-3714-AF56-5243CAC9A499}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "printimage", "第4章  QMainWindow\printimage\printimage.vcproj", "{433713A5-6463-33E2-AA53-6B3EFAF85346}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "printtext", "第4章  QMainWindow\printtext\printtext.vcproj", "{F0056B19-4340-31E7-A45E-E301495466F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "toolbar", "第4章  QMainWindow\toolbar\toolbar.vcproj", "{A093E163-F3AA-3CC6-AB57-AAA0D144208F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCE6609-882B-33E1-83AB-93A348BB0F87}.debug|Win32.ActiveCfg = debug|Win32
+		{EDCE6609-882B-33E1-83AB-93A348BB0F87}.debug|Win32.Build.0 = debug|Win32
+		{EDCE6609-882B-33E1-83AB-93A348BB0F87}.Release|Win32.ActiveCfg = Release|Win32
+		{EDCE6609-882B-33E1-83AB-93A348BB0F87}.Release|Win32.Build.0 = Release|Win32
+		{B298CAE9-F3C4-3D26-9983-E5B3123B358D}.debug|Win32.ActiveCfg = debug|Win32
+		{B298CAE9-F3C4-3D26-9983-E5B3123B358D}.debug|Win32.Build.0 = debug|Win32
+		{B298CAE9-F3C4-3D26-9983-E5B3123B358D}.Release|Win32.ActiveCfg = Release|Win32
+		{B298CAE9-F3C4-3D26-9983-E5B3123B358D}.Release|Win32.Build.0 = Release|Win32
+		{8D87C558-E0CC-3FC4-8AE0-CEEAA6A85357}.debug|Win32.ActiveCfg = debug|Win32
+		{8D87C558-E0CC-3FC4-8AE0-CEEAA6A85357}.debug|Win32.Build.0 = debug|Win32
+		{8D87C558-E0CC-3FC4-8AE0-CEEAA6A85357}.Release|Win32.ActiveCfg = Release|Win32
+		{8D87C558-E0CC-3FC4-8AE0-CEEAA6A85357}.Release|Win32.Build.0 = Release|Win32
+		{231ADDC0-CD62-3714-AF56-5243CAC9A499}.debug|Win32.ActiveCfg = debug|Win32
+		{231ADDC0-CD62-3714-AF56-5243CAC9A499}.debug|Win32.Build.0 = debug|Win32
+		{231ADDC0-CD62-3714-AF56-5243CAC9A499}.Release|Win32.ActiveCfg = Release|Win32
+		{231ADDC0-CD62-3714-AF56-5243CAC9A499}.Release|Win32.Build.0 = Release|Win32
+		{433713A5-6463-33E2-AA53-6B3EFAF85346}.debug|Win32.ActiveCfg = debug|Win32
+		{433713A5-6463-33E2-AA53-6B3EFAF85346}.debug|Win32.Build.0 = debug|Win32
+		{433713A5-6463-33E2-AA53-6B3EFAF85346}.Release|Win32.ActiveCfg = Release|Win32
+		{433713A5-6463-33E2-AA53-6B3EFAF85346}.Release|Win32.Build.0 = Release|Win32
+		{F0056B19-4340-31E7-A45E-E301495466F8}.debug|Win32.ActiveCfg = debug|Win32
+		{F0056B19-4340-31E7-A45E-E301495466F8}.debug|Win32.Build.0 = debug|Win32
+		{F0056B19-4340-31E7-A45E-E301495466F8}.Release|Win32.ActiveCfg = Release|Win32
+		{F0056B19-4340-31E7-A45E-E301495466F8}.Release|Win32.Build.0 = Release|Win32
+		{A093E163-F3AA-3CC6-AB57-AAA0D144208F}.debug|Win32.ActiveCfg = debug|Win32
+		{A093E163-F3AA-3CC6-AB57-AAA0D144208F}.debug|Win32.Build.0 = debug|Win32
+		{A093E163-F3AA-3CC6-AB57-AAA0D144208F}.Release|Win32.ActiveCfg = Release|Win32
+		{A093E163-F3AA-3CC6-AB57-AAA0D144208F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

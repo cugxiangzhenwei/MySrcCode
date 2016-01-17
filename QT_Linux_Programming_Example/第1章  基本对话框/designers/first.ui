@@ -1,0 +1,44 @@
+<ui version="4.0" >
+ <class>First</class>
+ <widget class="QWidget" name="First" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>这是第一个 UI !!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="childPushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>子窗口</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

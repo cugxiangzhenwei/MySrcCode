@@ -1,0 +1,14 @@
+INPUT(
+./release\baseinfo.o
+./release\configdialog.o
+./release\contact.o
+./release\detail.o
+./release\fader.o
+./release\main.o
+./release\moc_baseinfo.o
+./release\moc_configdialog.o
+./release\moc_contact.o
+./release\moc_detail.o
+./release\moc_fader.o
+./release\qrc_configdialog.o
+);

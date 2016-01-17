@@ -1,0 +1,112 @@
+#模块设置，一般设置为app(生成应用程序,默认),subdirs(生成makefile文件编译subdirs指定的子文件夹),lib(生成库文件)
+
+变量TEMPLATE描述了为建立目标文件而采用何种模板,即生成何种形式的Makefile文件.qmake 工具定义了5种模板:
+
+应用程序 app:为建立一个Qt应用程序创建Makefile文件;
+
+库 lib:为建立引用程序库而创建Makefile文件;
+
+子工程 subdirs:为建立子目录下的目标文件创建一个Makefile文件,子目录通过变量SUBDIRS指定(子目录下的工程文件也需要指出使用何种模板);
+
+VC应用程序 vcapp:为Visual Studio 生成一个应用程序工程,仅仅用语Windos操作系统;
+
+VC库 vclib:为Visual Studio生成一个应用程序库工程,仅仅用语Windows操作系统;
+
+TEMPLATE = app
+
+ 
+
+#指定生成的应用程序名
+表述了目标文件的名称,即生成的应用程序的名字.qmake工具自动生成的qmake工程文件采用默认方式(TARGET的值为空),即应用程序的名字采用工程文件所在的文件夹的名字TARGET = hello
+
+#指定生成的应用程序放置的目录
+
+DESTDIR += ../bin
+
+ 
+
+#添加或减少CONFIG的配置模块,一般采用默认即可,但是除去debug_and_release模块不会生成debug和release文件夹
+# Changes the name of the target, whenis debug mode
+
+CONFIG( debug, debug|release ) {
+
+    TARGET = $${TARGET}_d
+
+    BUILD_NAME = debug
+
+}
+
+CONFIG( release, debug|release ):BUILD_NAME =release
+
+ 
+
+#指定uic命令将.ui文件转化成ui_*.h文件的存放的目录
+
+UI_DIR += forms
+
+ 
+
+#指定rcc命令将.qrc文件转换成qrc_*.h文件的存放目录
+
+RCC_DIR += ../tmp
+
+ 
+
+#指定moc命令将含Q_OBJECT的头文件转换成标准.h文件的存放目录
+
+MOC_DIR += ../tmp
+
+ 
+
+#指定目标文件的存放目录
+
+描述了编译/连接应用程序过程中产生的中间文件存放的位置.
+
+OBJECTS_DIR +=../tmp
+
+ 
+
+#程序编译时依赖的相关路径
+
+描述建立应用程序所依赖的其他文件所在的路径
+
+DEPENDPATH+= 
+
+ 
+
+#头文件包含路径
+
+INCLUDEPATH+= 
+
+ 
+
+#qmake时产生的信息,$${a}读取变量a的字符串,$$(PATH)读取环境变量PATH
+#message($$(PATH))
+#源文件编码方式
+
+CODECFORSRC = GBK
+
+ 
+
+# Input
+#工程中包含的头文件
+
+HEADERS +=include/hello.h
+
+ 
+
+#工程中包含的.ui设计文件
+
+FORMS += forms/hello.ui
+
+ 
+
+#工程中包含的源文件
+
+SOURCES +=sources/main.cpp sources/hello.cpp
+
+ 
+
+#工程中包含的资源文件
+RESOURCES += qrc/resource.qrc
+

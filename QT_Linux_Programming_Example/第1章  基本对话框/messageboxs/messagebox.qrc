@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/linuxredhat.png</file>
+    </qresource>
+</RCC>

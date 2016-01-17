@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "combine", "第2章  布局管理\combine\combine.vcproj", "{EAE3C623-98DF-345A-869F-055E76BFCD0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dockwindows", "第2章  布局管理\dockwindows\dockwindows.vcproj", "{D39072F0-01E4-38F9-BF8A-848B445B1A39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "layoutdlg", "第2章  布局管理\layoutdlg\layoutdlg.vcproj", "{47355872-138E-37F5-8413-A3E1382CB24B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "splitter", "第2章  布局管理\splitter\splitter.vcproj", "{382102A6-E730-35C4-A49F-ACC54C41A326}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stack", "第2章  布局管理\stack\stack.vcproj", "{9880C588-86BA-3A16-A1AD-B1A3F0470474}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "workspace", "第2章  布局管理\workspace\workspace.vcproj", "{8A2FE4AF-357E-3AC7-A6A8-B3BBB9384817}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAE3C623-98DF-345A-869F-055E76BFCD0E}.debug|Win32.ActiveCfg = debug|Win32
+		{EAE3C623-98DF-345A-869F-055E76BFCD0E}.debug|Win32.Build.0 = debug|Win32
+		{EAE3C623-98DF-345A-869F-055E76BFCD0E}.Release|Win32.ActiveCfg = Release|Win32
+		{EAE3C623-98DF-345A-869F-055E76BFCD0E}.Release|Win32.Build.0 = Release|Win32
+		{D39072F0-01E4-38F9-BF8A-848B445B1A39}.debug|Win32.ActiveCfg = debug|Win32
+		{D39072F0-01E4-38F9-BF8A-848B445B1A39}.debug|Win32.Build.0 = debug|Win32
+		{D39072F0-01E4-38F9-BF8A-848B445B1A39}.Release|Win32.ActiveCfg = Release|Win32
+		{D39072F0-01E4-38F9-BF8A-848B445B1A39}.Release|Win32.Build.0 = Release|Win32
+		{47355872-138E-37F5-8413-A3E1382CB24B}.debug|Win32.ActiveCfg = debug|Win32
+		{47355872-138E-37F5-8413-A3E1382CB24B}.debug|Win32.Build.0 = debug|Win32
+		{47355872-138E-37F5-8413-A3E1382CB24B}.Release|Win32.ActiveCfg = Release|Win32
+		{47355872-138E-37F5-8413-A3E1382CB24B}.Release|Win32.Build.0 = Release|Win32
+		{382102A6-E730-35C4-A49F-ACC54C41A326}.debug|Win32.ActiveCfg = debug|Win32
+		{382102A6-E730-35C4-A49F-ACC54C41A326}.debug|Win32.Build.0 = debug|Win32
+		{382102A6-E730-35C4-A49F-ACC54C41A326}.Release|Win32.ActiveCfg = Release|Win32
+		{382102A6-E730-35C4-A49F-ACC54C41A326}.Release|Win32.Build.0 = Release|Win32
+		{9880C588-86BA-3A16-A1AD-B1A3F0470474}.debug|Win32.ActiveCfg = debug|Win32
+		{9880C588-86BA-3A16-A1AD-B1A3F0470474}.debug|Win32.Build.0 = debug|Win32
+		{9880C588-86BA-3A16-A1AD-B1A3F0470474}.Release|Win32.ActiveCfg = Release|Win32
+		{9880C588-86BA-3A16-A1AD-B1A3F0470474}.Release|Win32.Build.0 = Release|Win32
+		{8A2FE4AF-357E-3AC7-A6A8-B3BBB9384817}.debug|Win32.ActiveCfg = debug|Win32
+		{8A2FE4AF-357E-3AC7-A6A8-B3BBB9384817}.debug|Win32.Build.0 = debug|Win32
+		{8A2FE4AF-357E-3AC7-A6A8-B3BBB9384817}.Release|Win32.ActiveCfg = Release|Win32
+		{8A2FE4AF-357E-3AC7-A6A8-B3BBB9384817}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

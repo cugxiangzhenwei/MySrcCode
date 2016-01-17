@@ -1,0 +1,23 @@
+1.读取每个目录内是否有*.pro文件，加上
+
+MOC_DIR=..\..\Temp\Form
+RCC_DIR=..\..\Temp\Form
+UI_DIR=.\..\Temp\Form
+CONFIG( debug, debug|release ){
+     DESTDIR=..\..\Bin\Debug
+  BUILD_NAME = debug
+}
+
+2. 将qmake-tp-vc.bat 批处理工具复制到含有cpp文件的目录，然后运行qmake-tp-vc.bat
+
+3. 删除所有目录中的debug和release文件夹
+
+4. 删除所有目录下的*.user *.ncb *.suo 文件
+
+5. 删除Bin\Debug目录下的除了*.ts的所有文件
+
+6. 删除Bin目录下的除了*.ts的所有文件
+
+7. 删除所有目录下的make-tp-vc.bat文件
+－－－－－－－－－－－－－－－－－－－－－－－－
+以上任务分别用批处理命令和程序实现

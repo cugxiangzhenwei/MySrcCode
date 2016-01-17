@@ -1,0 +1,12 @@
+附件包含目录
+f:\Qt\4.7.3\include\QtCore
+f:\Qt\4.7.3\include\QtGui
+f:\Qt\4.7.3\include
+f:\Qt\4.7.3\include\ActiveQt
+f:\Qt\4.7.3\mkspecs\default
+debug
+
+链接器输入：
+f:\Qt\4.7.3\lib\qtmaind.lib
+f:\Qt\4.7.3\lib\QtGuid4.lib
+f:\Qt\4.7.3\lib\QtCored4.lib

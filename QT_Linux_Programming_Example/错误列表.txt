@@ -1,0 +1,4 @@
+第五章：svg
+无法打开#include <QtSvg>
+gradient 对pow()函数的调用不明确
+第七章:view项目函数必须返回一个值

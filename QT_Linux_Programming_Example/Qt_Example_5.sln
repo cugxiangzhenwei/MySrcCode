@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gradient", "第5章  图形与图画\gradient\gradient.vcproj", "{903CF285-62ED-345C-B553-D806AC8A0F73}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "paintbasic", "第5章  图形与图画\paintbasic\paintbasic.vcproj", "{8A55E020-CAFC-3666-8CDA-606196BB5036}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "painter", "第5章  图形与图画\painter\painter.vcproj", "{0E5CB7D7-0C18-355F-8989-21549533E1EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "painterpath", "第5章  图形与图画\painterpath\painterpath.vcproj", "{81C3A9DE-DBC7-3C40-84E1-C9EDAC8FF542}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "painttrans", "第5章  图形与图画\painttrans\painttrans.vcproj", "{A0A034FB-1047-3A57-B66D-4E2970661F9B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pictrans", "第5章  图形与图画\pictrans\pictrans.vcproj", "{C6968069-CB7B-386E-8051-0F185CF558D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rubberband", "第5章  图形与图画\rubberband\rubberband.vcproj", "{BAF92AF0-DAF9-3C29-A50B-8DA7D9E581A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "svg", "第5章  图形与图画\svg\svg.vcproj", "{2EDFCA25-208D-36E7-AA07-F62FCDEB7E8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903CF285-62ED-345C-B553-D806AC8A0F73}.debug|Win32.ActiveCfg = debug|Win32
+		{903CF285-62ED-345C-B553-D806AC8A0F73}.debug|Win32.Build.0 = debug|Win32
+		{903CF285-62ED-345C-B553-D806AC8A0F73}.Release|Win32.ActiveCfg = Release|Win32
+		{903CF285-62ED-345C-B553-D806AC8A0F73}.Release|Win32.Build.0 = Release|Win32
+		{8A55E020-CAFC-3666-8CDA-606196BB5036}.debug|Win32.ActiveCfg = debug|Win32
+		{8A55E020-CAFC-3666-8CDA-606196BB5036}.debug|Win32.Build.0 = debug|Win32
+		{8A55E020-CAFC-3666-8CDA-606196BB5036}.Release|Win32.ActiveCfg = Release|Win32
+		{8A55E020-CAFC-3666-8CDA-606196BB5036}.Release|Win32.Build.0 = Release|Win32
+		{0E5CB7D7-0C18-355F-8989-21549533E1EC}.debug|Win32.ActiveCfg = debug|Win32
+		{0E5CB7D7-0C18-355F-8989-21549533E1EC}.debug|Win32.Build.0 = debug|Win32
+		{0E5CB7D7-0C18-355F-8989-21549533E1EC}.Release|Win32.ActiveCfg = Release|Win32
+		{0E5CB7D7-0C18-355F-8989-21549533E1EC}.Release|Win32.Build.0 = Release|Win32
+		{81C3A9DE-DBC7-3C40-84E1-C9EDAC8FF542}.debug|Win32.ActiveCfg = debug|Win32
+		{81C3A9DE-DBC7-3C40-84E1-C9EDAC8FF542}.debug|Win32.Build.0 = debug|Win32
+		{81C3A9DE-DBC7-3C40-84E1-C9EDAC8FF542}.Release|Win32.ActiveCfg = Release|Win32
+		{81C3A9DE-DBC7-3C40-84E1-C9EDAC8FF542}.Release|Win32.Build.0 = Release|Win32
+		{A0A034FB-1047-3A57-B66D-4E2970661F9B}.debug|Win32.ActiveCfg = debug|Win32
+		{A0A034FB-1047-3A57-B66D-4E2970661F9B}.debug|Win32.Build.0 = debug|Win32
+		{A0A034FB-1047-3A57-B66D-4E2970661F9B}.Release|Win32.ActiveCfg = Release|Win32
+		{A0A034FB-1047-3A57-B66D-4E2970661F9B}.Release|Win32.Build.0 = Release|Win32
+		{C6968069-CB7B-386E-8051-0F185CF558D9}.debug|Win32.ActiveCfg = debug|Win32
+		{C6968069-CB7B-386E-8051-0F185CF558D9}.debug|Win32.Build.0 = debug|Win32
+		{C6968069-CB7B-386E-8051-0F185CF558D9}.Release|Win32.ActiveCfg = Release|Win32
+		{C6968069-CB7B-386E-8051-0F185CF558D9}.Release|Win32.Build.0 = Release|Win32
+		{BAF92AF0-DAF9-3C29-A50B-8DA7D9E581A0}.debug|Win32.ActiveCfg = debug|Win32
+		{BAF92AF0-DAF9-3C29-A50B-8DA7D9E581A0}.debug|Win32.Build.0 = debug|Win32
+		{BAF92AF0-DAF9-3C29-A50B-8DA7D9E581A0}.Release|Win32.ActiveCfg = Release|Win32
+		{BAF92AF0-DAF9-3C29-A50B-8DA7D9E581A0}.Release|Win32.Build.0 = Release|Win32
+		{2EDFCA25-208D-36E7-AA07-F62FCDEB7E8C}.debug|Win32.ActiveCfg = debug|Win32
+		{2EDFCA25-208D-36E7-AA07-F62FCDEB7E8C}.debug|Win32.Build.0 = debug|Win32
+		{2EDFCA25-208D-36E7-AA07-F62FCDEB7E8C}.Release|Win32.ActiveCfg = Release|Win32
+		{2EDFCA25-208D-36E7-AA07-F62FCDEB7E8C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

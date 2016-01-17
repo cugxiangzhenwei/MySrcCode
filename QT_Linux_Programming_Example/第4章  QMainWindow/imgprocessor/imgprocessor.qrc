@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/openfile.png</file>
+    <file>images/zoomin.png</file>
+    <file>images/zoomout.png</file>
+    <file>images/rotate90.png</file>
+    <file>images/rotate180.png</file>
+    <file>images/rotate270.png</file>
+    <file>images/mirrorvertical.png</file>
+    <file>images/mirrorhorizontal.png</file>
+    
+</qresource>
+</RCC>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "butterfly", "第6章  Graphics View\butterfly\butterfly.vcproj", "{5B868CC0-D9F2-35FB-AFF3-DC5724EDF8A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "items", "第6章  Graphics View\items\items.vcproj", "{774305D9-1CE9-3B47-8E4A-8F8280293793}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itemtransform", "第6章  Graphics View\itemtransform\itemtransform.vcproj", "{A5449D7D-A318-3A43-8A7B-E646C94F0F48}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mapwidget", "第6章  Graphics View\mapwidget\mapwidget.vcproj", "{FC0CE5C4-0195-3DD3-A9BB-E822990CBBE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B868CC0-D9F2-35FB-AFF3-DC5724EDF8A6}.debug|Win32.ActiveCfg = debug|Win32
+		{5B868CC0-D9F2-35FB-AFF3-DC5724EDF8A6}.debug|Win32.Build.0 = debug|Win32
+		{5B868CC0-D9F2-35FB-AFF3-DC5724EDF8A6}.Release|Win32.ActiveCfg = Release|Win32
+		{5B868CC0-D9F2-35FB-AFF3-DC5724EDF8A6}.Release|Win32.Build.0 = Release|Win32
+		{774305D9-1CE9-3B47-8E4A-8F8280293793}.debug|Win32.ActiveCfg = debug|Win32
+		{774305D9-1CE9-3B47-8E4A-8F8280293793}.debug|Win32.Build.0 = debug|Win32
+		{774305D9-1CE9-3B47-8E4A-8F8280293793}.Release|Win32.ActiveCfg = Release|Win32
+		{774305D9-1CE9-3B47-8E4A-8F8280293793}.Release|Win32.Build.0 = Release|Win32
+		{A5449D7D-A318-3A43-8A7B-E646C94F0F48}.debug|Win32.ActiveCfg = debug|Win32
+		{A5449D7D-A318-3A43-8A7B-E646C94F0F48}.debug|Win32.Build.0 = debug|Win32
+		{A5449D7D-A318-3A43-8A7B-E646C94F0F48}.Release|Win32.ActiveCfg = Release|Win32
+		{A5449D7D-A318-3A43-8A7B-E646C94F0F48}.Release|Win32.Build.0 = Release|Win32
+		{FC0CE5C4-0195-3DD3-A9BB-E822990CBBE1}.debug|Win32.ActiveCfg = debug|Win32
+		{FC0CE5C4-0195-3DD3-A9BB-E822990CBBE1}.debug|Win32.Build.0 = debug|Win32
+		{FC0CE5C4-0195-3DD3-A9BB-E822990CBBE1}.Release|Win32.ActiveCfg = Release|Win32
+		{FC0CE5C4-0195-3DD3-A9BB-E822990CBBE1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

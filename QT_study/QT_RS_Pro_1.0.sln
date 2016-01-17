@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QT_RS_Pro_1.0", "QtRsPro\ProjectFile\QT_RS_Pro_1.0.vcproj", "{E6E54C31-B8D1-38D2-9C95-BF735CB2FEF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6E54C31-B8D1-38D2-9C95-BF735CB2FEF1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6E54C31-B8D1-38D2-9C95-BF735CB2FEF1}.Debug|Win32.Build.0 = Debug|Win32
+		{E6E54C31-B8D1-38D2-9C95-BF735CB2FEF1}.Release|Win32.ActiveCfg = Release|Win32
+		{E6E54C31-B8D1-38D2-9C95-BF735CB2FEF1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

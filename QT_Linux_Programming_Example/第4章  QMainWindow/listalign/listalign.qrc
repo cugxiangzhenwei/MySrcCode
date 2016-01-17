@@ -1,0 +1,10 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/center.png</file>
+    <file>images/justify.png</file>
+    <file>images/left.png</file>
+    <file>images/right.png</file>
+    <file>images/redo.png</file>
+    <file>images/undo.png</file>
+</qresource>
+</RCC>

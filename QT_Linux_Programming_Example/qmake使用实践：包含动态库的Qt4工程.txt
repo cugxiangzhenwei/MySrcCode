@@ -1,0 +1,207 @@
+本文是qmake的一个使用练习，是半年前所学的 分析与学习Qt Solution对qmake的使用 的续篇。
+
+采用一个非常简单的Qt程序作为例子，通过pro文件的合理编写，使得我们的程序在使用动态库的时候，几乎可以忽略掉动态库的存在。它包括3部分：
+
+生成动态库
+使用动态库
+生成与使用的自动化
+测试环境：
+
+ubuntu 11.04 + Qt 4.7.2
+windows vista + Qt 4.7.0(MSVC2008)
+windows vista + Qt 4.6.3(MinGW)
+例子的源码：http://code.google.com/p/h-qt-exercise/downloads/detail?name=QtAppWithDll.zip&can=2&q= (你可以先看代码，再决定是不是继续向下看)
+
+引子
+一个非常非常简单的Qt的小程序，是吧？
+
+widget.h
+#ifndef WIDGET_H
+#define WIDGET_H
+#include <QtGui/QWidget>
+class Widget:public QWidget
+{
+    Q_OBJECT
+public:
+    Widget(QWidget * parent=0);
+};
+#endif // WIDGET_H
+widget.cpp (本文件内容不变)
+#include "widget.h"
+
+Widget::Widget(QWidget *parent)
+    :QWidget(parent)
+{
+}
+main.cpp (本文件内容不变)
+#include <QtGui/QApplication>
+#include "widget.h"
+int main(int argc, char **argv)
+{
+    QApplication app(argc, argv);
+    Widget w;
+    w.show();
+    app.exec();
+}
+这个程序是如此的简单，我们都能很轻易地写出需要的pro文件
+
+HEADERS += widget.h
+SOURCES += main.cpp widget.cpp
+然后qmake，make即可得到结果。
+
+可是，你想过么:如果不想让我们的程序铁板一块，分成几个动态库(共享库)会怎么样呢，pro文件又该如何写？
+
+如何做？(一)源码分开放置
+既然要准备用动态库了，库的源码和程序的源码还是分开放置吧？
+
+将源文件放到不同的路径下
+src/main.cpp
+libwidget/widget.h
+libwidget/widget.cpp
+我们知道qmake不如cmake那么强大，它的每个project只能有一个目标，要么是库，要么是可执行程序。当目标多于一个时，只能用 subdirs 这个TEMPLATE，于是，
+
+我们需要3个xxx.pro文件
+project.pro
+src/src.pro
+libwidget/libwidet.pro
+可以确定，project.pro 文件没有什么悬念：
+
+project.pro (本文件内容不变)
+TEMPLATE=subdirs
+CONFIG += ordered
+SUBDIRS += libwidget src
+如何做?(二)生成动态库
+使用动态库，当务之急是生成动态库。
+
+如果我们不在windows下使用，一切都会比较简单，源代码也不需要改动。
+在windows下，动态库导出的东西需要使用 __declspec(dllexport)。
+我们需要兼顾不同的平台，幸好Qt有解决方案，改造后的widget.h文件如下：
+
+widget.h (本文件内容后续不再改变)
+#ifndef WIDGET_H
+#define WIDGET_H
+
+#include <QtGui/QWidget>
+
+#if defined(LIBWIDGET_BUILD)
+#  define WIDGET_API Q_DECL_EXPORT
+#else
+#  define WIDGET_API Q_DECL_IMPORT
+#endif
+
+class WIDGET_API Widget:public QWidget
+{
+    Q_OBJECT
+public:
+    Widget(QWidget * parent=0);
+};
+
+#endif // WIDGET_H
+然后写写 libwidget.pro 文件：
+
+TEMPLATE = lib
+TARGET = widget
+DEFINES += LIBWIDGET_BUILD
+SOURCES += widget.cpp
+HEADERS += widget.h
+这样一来，确实可以生成动态库了。可是总觉得不太好：
+
+首先，windows下debug和release的动态库是不兼容的，取同一个名字(TARGET=widget)会不会有潜在的问题？
+其次，生成的库放到那个路径下呢？程序链接和运行时如何找到它？
+暂且存疑，我们先看看其他
+
+如何做?(三)使用动态库
+看看可执行程序的生成，它要使用我们前面的库，那么：
+
+编译预处理时需要找到头文件
+连接时需要找到库文件(库文件在那个目录下，叫什么名字)
+运行时能够找到动态库
+src/src.pro 文件可以就写成这个样子了：
+
+TEMPLATE=app
+INCLUDEPATH += ../libwidget
+
+LIBS += -LThePathWePutLib -lwidget
+
+SOURCES += main.cpp
+先不考虑运行时的情况。头文件和库文件都和前面的libwidget直接相关，怎么构建自动化呢？比如：库文件的名字改动了？库文件的存放目录变了？...
+
+如何做?(四)构建自动化
+我们构建动态库的时候，可以控制动态库的名字，可以控制存放目录，那么，我在讲动态库的这部分设置独立出来不就行了：恩，使用一个 libwidget/libwidget.pri 文件。l由于src/src.pro和libwidget/libwidget.pro共用这个文件，还需要一个开关来进行区分(这就是widget-buildlib)：
+
+INCLUDEPATH += $$PWD
+TEMPLATE += fakelib
+LIBWIDGET_NAME = $$qtLibraryTarget(widget)
+TEMPLATE -= fakelib
+!widget-buildlib{
+    LIBS += -L$$PROJECT_LIBDIR -l$$LIBWIDGET_NAME
+}else{
+    SOURCES += widget.cpp
+    HEADERS += widget.h
+}
+注意：这儿库目录用一个变量PROJECT_LIBDIR表示(你这儿可以直接换成存放库的目录)，具体稍后解释。这儿的库的名字使用qtLibraryTarget进行生成(这样可以确保windows下debug模式生成的动态库可以自动加个d),fakelib是用来哄骗qtibraryarget的，不然它只在TEMPLATE为lib是生效。
+
+ 
+
+这样，可执行程序的生成时，它要使用我们前面的库，只需要包括进来libwidget.pri，于是：
+
+src/src.pro 文件可以就写成这个样子了：
+TEMPLATE=app
+include(../libwidget/libwidget.pri)
+SOURCES += main.cpp
+相应地，libwidget/libwidget.pro 可以修改如下：
+TEMPLATE = lib
+CONFIG += widget-buildlib
+include(libwidget.pri)
+TARGET = $$LIBWIDGET_NAME
+CONFIG += debug_and_release build_all
+DEFINES += LIBWIDGET_BUILD
+如何做?(五)运行自动化
+现在似乎一切都比较正常了，可是有一点，我们要将生成的库文件放到什么地方呢？才能使得运行时都能被找到（就像没使用动态库一样，点击IDE中的run或者去目录下双击即可运行）
+
+我们需要：
+
+将库文件放到 lib目录下
+将可执行文件放到 bin目录下
+windows下将 xxx.dll 也放到bin目录下
+恩，这两个目录对整个工程比较通用，我们可以考虑建立一个 common.pri 文件：
+
+common.pri 内容 (本文件内容后续不再改变)
+PROJECT_BINDIR = $$PWD/bin
+PROJECT_LIBDIR = $$PWD/lib
+然后libwidget/libwidget.pri 包含该common.pri 文件
+
+libwidget/libwidget.pri (本文件内容后续不再改变)
+INCLUDEPATH += $$PWD
+DEPENDPATH += $$PWD
+TEMPLATE += fakelib
+LIBWIDGET_NAME = $$qtLibraryTarget(widget)
+TEMPLATE -= fakelib
+include(../common.pri)
+!widget-buildlib{
+    LIBS += -L$$PROJECT_LIBDIR -l$$LIBWIDGET_NAME
+}else{
+    SOURCES += widget.cpp
+    HEADERS += widget.h
+}
+完整版的 libwidget/libwidget.pro 文件 (本文件内容后续不再改变)
+TEMPLATE = lib
+CONFIG += widget-buildlib
+include(libwidget.pri)
+TARGET = $$LIBWIDGET_NAME
+DESTDIR = $$PROJECT_LIBDIR
+win32{
+    DLLDESTDIR = $$PROJECT_BINDIR
+    QMAKE_DISTCLEAN += $$PROJECT_BINDIR/$${LIBWIDGET_NAME}.dll
+}
+CONFIG += debug_and_release build_all
+DEFINES += LIBWIDGET_BUILD
+注意：这儿我们指定了库文件的目录，并会将dll拷贝到了PROJECT_BINDIR目录
+
+完整版的 src/src.pro 文件 (本文件内容后续不再改变)
+TEMPLATE=app
+include(../libwidget/libwidget.pri)
+DESTDIR = $$PROJECT_BINDIR
+unix:QMAKE_RPATHDIR+=$$PROJECT_LIBDIR
+SOURCES += main.cpp
+注意：这儿我们对unix下，指定了rpath，使得程序运行时不许设置可以即可找到动态库

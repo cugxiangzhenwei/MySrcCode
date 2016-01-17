@@ -1,0 +1,3 @@
+EXPORTS
+StartMouseHook		@1
+StopMouseHook		@2

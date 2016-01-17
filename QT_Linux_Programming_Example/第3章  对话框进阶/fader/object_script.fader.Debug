@@ -1,0 +1,14 @@
+INPUT(
+./debug\baseinfo.o
+./debug\configdialog.o
+./debug\contact.o
+./debug\detail.o
+./debug\fader.o
+./debug\main.o
+./debug\moc_baseinfo.o
+./debug\moc_configdialog.o
+./debug\moc_contact.o
+./debug\moc_detail.o
+./debug\moc_fader.o
+./debug\qrc_configdialog.o
+);

@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/bb.png</file>
+    <file>images/jj.png</file>
+    <file>images/hh.png</file>
+    <file>images/yy.png</file>
+    <file>images/nn.png</file>
+    <file>images/1.png</file>
+    <file>images/2.png</file>
+    <file>images/3.png</file>
+    <file>images/4.png</file>
+</qresource>
+</RCC>

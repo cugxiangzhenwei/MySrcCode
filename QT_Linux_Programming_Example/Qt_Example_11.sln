@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cursor", "第11章  其它\cursor\cursor.vcproj", "{8C620103-AD3A-3ADB-AA7E-BDE9A3BB98C3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "datastream", "第11章  其它\datastream\datastream.vcproj", "{F7F10C93-BA3A-3BFF-8951-A0ECF2472D51}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dragicon", "第11章  其它\dragicon\dragicon.vcproj", "{F1CCB3E8-A146-314A-8C84-C562A27FE8AA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dragtext", "第11章  其它\dragtext\dragtext.vcproj", "{C23422D1-9EB2-3302-9D41-31946D7C82BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "settings", "第11章  其它\settings\settings.vcproj", "{85A513BF-EE3B-3DD2-A716-7110C4BAF864}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stringcodec", "第11章  其它\stringcodec\stringcodec.vcproj", "{9402D49A-C844-3C57-B8BC-66C734DFAD35}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "style", "第11章  其它\style\style.vcproj", "{9CE553A1-3A16-37E7-ABBB-7B4ED5995617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C620103-AD3A-3ADB-AA7E-BDE9A3BB98C3}.debug|Win32.ActiveCfg = debug|Win32
+		{8C620103-AD3A-3ADB-AA7E-BDE9A3BB98C3}.debug|Win32.Build.0 = debug|Win32
+		{8C620103-AD3A-3ADB-AA7E-BDE9A3BB98C3}.Release|Win32.ActiveCfg = Release|Win32
+		{8C620103-AD3A-3ADB-AA7E-BDE9A3BB98C3}.Release|Win32.Build.0 = Release|Win32
+		{F7F10C93-BA3A-3BFF-8951-A0ECF2472D51}.debug|Win32.ActiveCfg = debug|Win32
+		{F7F10C93-BA3A-3BFF-8951-A0ECF2472D51}.debug|Win32.Build.0 = debug|Win32
+		{F7F10C93-BA3A-3BFF-8951-A0ECF2472D51}.Release|Win32.ActiveCfg = Release|Win32
+		{F7F10C93-BA3A-3BFF-8951-A0ECF2472D51}.Release|Win32.Build.0 = Release|Win32
+		{F1CCB3E8-A146-314A-8C84-C562A27FE8AA}.debug|Win32.ActiveCfg = debug|Win32
+		{F1CCB3E8-A146-314A-8C84-C562A27FE8AA}.debug|Win32.Build.0 = debug|Win32
+		{F1CCB3E8-A146-314A-8C84-C562A27FE8AA}.Release|Win32.ActiveCfg = Release|Win32
+		{F1CCB3E8-A146-314A-8C84-C562A27FE8AA}.Release|Win32.Build.0 = Release|Win32
+		{C23422D1-9EB2-3302-9D41-31946D7C82BA}.debug|Win32.ActiveCfg = debug|Win32
+		{C23422D1-9EB2-3302-9D41-31946D7C82BA}.debug|Win32.Build.0 = debug|Win32
+		{C23422D1-9EB2-3302-9D41-31946D7C82BA}.Release|Win32.ActiveCfg = Release|Win32
+		{C23422D1-9EB2-3302-9D41-31946D7C82BA}.Release|Win32.Build.0 = Release|Win32
+		{85A513BF-EE3B-3DD2-A716-7110C4BAF864}.debug|Win32.ActiveCfg = debug|Win32
+		{85A513BF-EE3B-3DD2-A716-7110C4BAF864}.debug|Win32.Build.0 = debug|Win32
+		{85A513BF-EE3B-3DD2-A716-7110C4BAF864}.Release|Win32.ActiveCfg = Release|Win32
+		{85A513BF-EE3B-3DD2-A716-7110C4BAF864}.Release|Win32.Build.0 = Release|Win32
+		{9402D49A-C844-3C57-B8BC-66C734DFAD35}.debug|Win32.ActiveCfg = debug|Win32
+		{9402D49A-C844-3C57-B8BC-66C734DFAD35}.debug|Win32.Build.0 = debug|Win32
+		{9402D49A-C844-3C57-B8BC-66C734DFAD35}.Release|Win32.ActiveCfg = Release|Win32
+		{9402D49A-C844-3C57-B8BC-66C734DFAD35}.Release|Win32.Build.0 = Release|Win32
+		{9CE553A1-3A16-37E7-ABBB-7B4ED5995617}.debug|Win32.ActiveCfg = debug|Win32
+		{9CE553A1-3A16-37E7-ABBB-7B4ED5995617}.debug|Win32.Build.0 = debug|Win32
+		{9CE553A1-3A16-37E7-ABBB-7B4ED5995617}.Release|Win32.ActiveCfg = Release|Win32
+		{9CE553A1-3A16-37E7-ABBB-7B4ED5995617}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

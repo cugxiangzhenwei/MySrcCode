@@ -1,0 +1,17 @@
+临时目录：$(SolutionDir)\Temp\$(ProjectName)$(ConfigurationName)\
+对象列表：$(SolutionDir)\Temp\$(ProjectName)$(ConfigurationName)\
+Debug输出目录：  $(SolutionDir)\Bin\Debug
+release输出目录：$(SolutionDir)\Bin
+debug输出文件：  ..\..\Bin\debug\$(ProjectName).exe
+release输出文件：..\..\Bin\$(ProjectName).exe
+
+
+DESTDIR=..\..\Bin
+MOC_DIR=..\..\Temp\Form
+RCC_DIR=..\..\Temp\Form
+UI_DIR=..\..\Temp\Form
+OBJECTS_DIR=..\..\Temp
+CONFIG( debug, debug|release ){
+     DESTDIR=..\..\Bin\Debug
+  BUILD_NAME = debug
+}

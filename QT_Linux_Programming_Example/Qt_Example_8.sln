@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tcpclient", "第8章  网络与通信\chat\client\tcpclient.vcproj", "{652838F9-8EAE-3504-959E-82DFAD60B23B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tcpserver", "第8章  网络与通信\chat\server\tcpserver.vcproj", "{5DF75168-CF63-3331-9D00-430C4E8B7FCA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ftpclient", "第8章  网络与通信\ftpclient\ftpclient.vcproj", "{332B02C9-CE8B-310B-B06A-DD0CADCC34A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "httpclient", "第8章  网络与通信\httpclient\httpclient.vcproj", "{87B5C249-29C7-31FA-8B35-DD17D1D9F2D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "networkinformation", "第8章  网络与通信\networkinformation\networkinformation.vcproj", "{91C1E05D-038E-3577-AD9F-7900E22334FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "udpclient", "第8章  网络与通信\udpbroadcast\client\udpclient.vcproj", "{C220B8B1-41BE-3EDC-980D-6955A7CF96E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "udpserver", "第8章  网络与通信\udpbroadcast\server\udpserver.vcproj", "{2EEE0BA2-B1F2-37C1-81D8-DC1BCBD9477E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{652838F9-8EAE-3504-959E-82DFAD60B23B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{652838F9-8EAE-3504-959E-82DFAD60B23B}.Debug|Win32.Build.0 = Debug|Win32
+		{652838F9-8EAE-3504-959E-82DFAD60B23B}.Release|Win32.ActiveCfg = Release|Win32
+		{652838F9-8EAE-3504-959E-82DFAD60B23B}.Release|Win32.Build.0 = Release|Win32
+		{5DF75168-CF63-3331-9D00-430C4E8B7FCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5DF75168-CF63-3331-9D00-430C4E8B7FCA}.Debug|Win32.Build.0 = Debug|Win32
+		{5DF75168-CF63-3331-9D00-430C4E8B7FCA}.Release|Win32.ActiveCfg = Release|Win32
+		{5DF75168-CF63-3331-9D00-430C4E8B7FCA}.Release|Win32.Build.0 = Release|Win32
+		{332B02C9-CE8B-310B-B06A-DD0CADCC34A2}.Debug|Win32.ActiveCfg = debug|Win32
+		{332B02C9-CE8B-310B-B06A-DD0CADCC34A2}.Debug|Win32.Build.0 = debug|Win32
+		{332B02C9-CE8B-310B-B06A-DD0CADCC34A2}.Release|Win32.ActiveCfg = Release|Win32
+		{332B02C9-CE8B-310B-B06A-DD0CADCC34A2}.Release|Win32.Build.0 = Release|Win32
+		{87B5C249-29C7-31FA-8B35-DD17D1D9F2D7}.Debug|Win32.ActiveCfg = debug|Win32
+		{87B5C249-29C7-31FA-8B35-DD17D1D9F2D7}.Debug|Win32.Build.0 = debug|Win32
+		{87B5C249-29C7-31FA-8B35-DD17D1D9F2D7}.Release|Win32.ActiveCfg = Release|Win32
+		{87B5C249-29C7-31FA-8B35-DD17D1D9F2D7}.Release|Win32.Build.0 = Release|Win32
+		{91C1E05D-038E-3577-AD9F-7900E22334FD}.Debug|Win32.ActiveCfg = debug|Win32
+		{91C1E05D-038E-3577-AD9F-7900E22334FD}.Debug|Win32.Build.0 = debug|Win32
+		{91C1E05D-038E-3577-AD9F-7900E22334FD}.Release|Win32.ActiveCfg = Release|Win32
+		{91C1E05D-038E-3577-AD9F-7900E22334FD}.Release|Win32.Build.0 = Release|Win32
+		{C220B8B1-41BE-3EDC-980D-6955A7CF96E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C220B8B1-41BE-3EDC-980D-6955A7CF96E2}.Debug|Win32.Build.0 = Debug|Win32
+		{C220B8B1-41BE-3EDC-980D-6955A7CF96E2}.Release|Win32.ActiveCfg = Release|Win32
+		{C220B8B1-41BE-3EDC-980D-6955A7CF96E2}.Release|Win32.Build.0 = Release|Win32
+		{2EEE0BA2-B1F2-37C1-81D8-DC1BCBD9477E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2EEE0BA2-B1F2-37C1-81D8-DC1BCBD9477E}.Debug|Win32.Build.0 = Debug|Win32
+		{2EEE0BA2-B1F2-37C1-81D8-DC1BCBD9477E}.Release|Win32.ActiveCfg = Release|Win32
+		{2EEE0BA2-B1F2-37C1-81D8-DC1BCBD9477E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

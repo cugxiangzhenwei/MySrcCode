@@ -1,0 +1,28 @@
+Detailed Description
+The QPrinter class is a paint device that paints on a printer.
+
+This device represents a series of pages of printed output, and is used in almost exactly the same way as other paint devices such as QWidget and QPixmap. A set of additional functions are provided to manage device-specific features, such as orientation and resolution, and to step through the pages in a document as it is generated.
+
+When printing directly to a printer on Windows or Mac OS X, QPrinter uses the built-in printer drivers. On X11, QPrinter uses the Common Unix Printing System (CUPS) or the standard Unix lpr utility to send PostScript or PDF output to the printer. As an alternative, the printProgram() function can be used to specify the command or utility to use instead of the system default.
+
+QPrinter supports a number of parameters, most of which can be changed by the end user through a print dialog. In general, QPrinter passes these functions onto the underlying QPrintEngine.
+
+The most important parameters are:
+
+setOrientation() tells QPrinter which page orientation to use. 
+setPageSize() tells QPrinter what page size to expect from the printer. 
+setResolution() tells QPrinter what resolution you wish the printer to provide, in dots per inch (DPI). 
+setFullPage() tells QPrinter whether you want to deal with the full page or just with the part the printer can draw on. 
+setNumCopies() tells QPrinter how many copies of the document it should print. 
+Many of these functions can only be called before the actual printing begins (i.e., before QPainter::begin() is called). This usually makes sense because, for example, it's not possible to change the number of copies when you are halfway through printing. There are also some settings that the user sets (through the printer dialog) and that applications are expected to obey. See QAbstractPrintDialog's documentation for more details.
+
+When QPainter::begin() is called, the QPrinter it operates on is prepared for a new page, enabling the QPainter to be used immediately to paint the first page in a document. Once the first page has been painted, newPage() can be called to request a new blank page to paint on, or QPainter::end() can be called to finish printing. The second page and all following pages are prepared using a call to newPage() before they are painted.
+
+The first page in a document does not need to be preceded by a call to newPage(). You only need to calling newPage() after QPainter::begin() if you need to insert a blank page at the beginning of a printed document. Similarly, calling newPage() after the last page in a document is painted will result in a trailing blank page appended to the end of the printed document.
+
+If you want to abort the print job, abort() will try its best to stop printing. It may cancel the entire job or just part of it.
+
+Since QPrinter can print to any QPrintEngine subclass, it is possible to extend printing support to cover new types of printing subsystem by subclassing QPrintEngine and reimplementing its interface.
+
+See also QPrintDialog and Printing with Qt.
+
