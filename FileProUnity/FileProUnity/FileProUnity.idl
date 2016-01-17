@@ -1,0 +1,57 @@
+// FileProUnity.idl : FileProUnity 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(FileProUnity.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(DF88EC29-172B-40AB-9269-82E37515EB68),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFileProCom : IDispatch{
+	[id(1), helpstring("弹出打开文件对话框")] HRESULT OpenFileDlg([in] BSTR strInJson, [out, retval] BSTR* strOutJson);
+	[id(2), helpstring("弹出选择目录对话框")] HRESULT SelectDirDlg([in] BSTR strJsonIn, [out, retval] BSTR* strJsonOut);
+	[id(3), helpstring("获取文件信息")] HRESULT GetFileInfo([in] BSTR strJSonIn, [out, retval] BSTR* strOutJson);
+	[id(4), helpstring("删除本地文件的接口")] HRESULT DeleteLocalFile([in] BSTR strInJson, [out, retval] BSTR* strOutJson);
+	[id(5), helpstring("获取本地文件的MD5值")] HRESULT GetFileMd5([in] BSTR strInJson, [out, retval] BSTR* strOutJson);
+	[id(6), helpstring("打开指定文件接口")] HRESULT OpenFile([in] BSTR strInJson, [out, retval] BSTR* strOutJson);
+	[id(7), helpstring("拷贝文件接口")] HRESULT CopyFileCom([in] BSTR strInJson, [out, retval] BSTR* strOutJson);
+	[id(8), helpstring("获取指定文件拷贝过程进度接口")] HRESULT GetCopyProgress([in] BSTR strInJson, [out, retval] BSTR* strOutJson);
+	[id(9), helpstring("设置回调函数")] HRESULT SetJsCallbackFunc([in] VARIANT scriptCallback);
+	[id(10), helpstring("取消文件拷贝过程")] HRESULT CancelCopy([in] BSTR strInJson);
+	[id(11), helpstring("获取右键菜单所有新建项的类型")] HRESULT GetAllNewItemTypes([in] BSTR strInJson, [out,retval] BSTR* strOutJson);
+	[id(12), helpstring("创建指定类型的文件的接口")] HRESULT CreateNewFile([in] BSTR strInJson, [out,retval] BSTR* strOutJson);
+};
+[
+	uuid(9B0A1516-481B-4857-B8AA-A60260B8168A),
+	version(1.0),
+]
+library FileProUnityLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(0D092B26-73F9-491E-9954-3FABF0BDB32F)
+	]
+	dispinterface _IFileProComEvents
+	{
+		properties:
+		methods:
+			[id(1), helpstring("报告拷贝进度的事件连接点")] HRESULT ReportCopyProgress([in] BSTR strJson);
+	};
+	[
+		
+		uuid(47ED8616-159C-45BC-8EA3-E77FEBEEF28F)	
+	]
+	coclass FileProCom
+	{
+		[default] interface IFileProCom;
+		[default, source] dispinterface _IFileProComEvents;
+	};
+};
+

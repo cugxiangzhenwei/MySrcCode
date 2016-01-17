@@ -1,0 +1,93 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<SCRIPT type=text/javascript>
+ function printMsg(msg1,msg2,mgs3,msg4,msg5) {
+      document.getElementById("Button3").value = msg1*100;
+  }
+    function RunOpenFileDlg(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        obj.SetJsCallbackFunc(printMsg);
+        var out = obj.OpenFileDlg("{\"filter\":\"Word File(*doc;*.docx)|*.doc;*.docx|文本文件(*.txt)|*.txt|可执行程序(*exe)|*exe|所有文件(*.*)|*.*||\",\"selectmode\":\"multi\"}");
+        alert(out);
+        var json = eval('(' + out + ')');
+        alert(json.path);
+    }
+
+    function RunSelectDirDlg(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var v = obj.SelectDirDlg("");
+        alert(v);
+       var json = eval('(' + v + ')');
+       alert(json.folderpath);
+    }	
+    
+    function RunCopyFile(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        obj.SetJsCallbackFunc(printMsg);
+        var v = obj.CopyFileCom("{\"Dest\":\"E:\\\\oarcle.zip\",\"Source\":\"Z:\\\\oarcle 10G_win32.zip\"}");
+        alert(v);
+    }	
+     function RunGetMD5(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var v = obj.GetFileMd5("{\"file\":\"E:\\\\aaaa.docx\"}");
+        alert(v);
+    }	
+    function RunGetFileInfo(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var v = obj.GetFileInfo("{\"file\":\"E:\\\\aaaa.docx\"}");
+        alert(v);
+    }	
+     function RunOpenFile(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var v = obj.OpenFile("{\"file\":\"E:\\\\aaaa.docx\"}");
+        alert(v);
+    }	
+     function RunDeleteFile(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var v = obj.DeleteLocalFile("{\"file\":\"E:\\\\新建文本文档.txt\"}");
+        alert(v);
+    }	
+     function RunCancelCopy(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        obj.CancelCopy("{\"Dest\":\"E:\\\\oarcle.zip\"}");
+    }	
+   
+     function GetAllNewType(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var out = obj.GetAllNewItemTypes("");
+        alert(out);
+    }	
+    
+     function CreateNewType(){
+        var obj;
+        obj = new ActiveXObject("FileProUnity.FileProCom.1");
+        var out = obj.CreateNewFile("{\"dir\":\"E:\\\\TestNewItem\",\"type\":\".docX\"}");
+        alert(out);
+    }	
+</SCRIPT>
+		
+</HEAD>
+<BODY>
+<button ID="Button1" onclick="RunOpenFileDlg();">RunOpenFileDlg</button>
+<button ID="Button2" onclick="RunSelectDirDlg();">RunSelectDirDlg</button>
+<button ID="Button3" onclick="RunCopyFile();">RunCopyFile</button>
+<button ID="Button4" onclick="RunGetMD5();">RunGetMD5</button>
+<button ID="Button5" onclick="RunGetFileInfo();">RunGetFileInfo</button>
+<button ID="Button6" onclick="RunOpenFile();">RunOpenFile</button>
+<button ID="Button7" onclick="RunDeleteFile();">RunDeleteFile</button>
+<button ID="Button8" onclick="RunCancelCopy();">RunCancelCopy</button>
+<button ID="Button9" onclick="GetAllNewType();">GetAllNewType</button>
+<button ID="Button10" onclick="CreateNewType();">创建新项目</button>
+</BODY>
+</HTML>

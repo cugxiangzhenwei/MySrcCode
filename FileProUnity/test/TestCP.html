@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 8.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+
+<object classid="CLSID:47ED8616-159C-45BC-8EA3-E77FEBEEF28F" id="testCom" width=0 height=0 ></object>
+<input type="button" ID="Button1"value="测试拷贝文件连接点" onclick="Start()">
+<script language="JavaScript" for="testCom" event="ReportCopyProgress(s)">
+       document.getElementById("Button1").value = s;
+</script>
+<script language="JavaScript">
+    function Start()
+    {
+        var v = testCom.CopyFileCom("{\"Dest\":\"E:\\\\oarcle.zip\",\"Source\":\"Z:\\\\oarcle 10G_win32.zip\"}");
+    }
+</script>
+
+
+
+
+</BODY>
+</HTML>

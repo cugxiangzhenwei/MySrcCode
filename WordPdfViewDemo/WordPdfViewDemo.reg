@@ -1,0 +1,16 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则调用
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\WordPdfViewDemo.Document = WordPdfViewDemo.Document
+
+
+HKEY_CLASSES_ROOT\WordPdfViewDemo.Document\CLSID = {84D33554-6E4F-4A60-B3F2-4A409F361F8C}
+
+HKEY_CLASSES_ROOT\CLSID\{84D33554-6E4F-4A60-B3F2-4A409F361F8C} = WordPdfViewDemo.Document
+HKEY_CLASSES_ROOT\CLSID\{84D33554-6E4F-4A60-B3F2-4A409F361F8C}\ProgId = WordPdfViewDemo.Document
+
+HKEY_CLASSES_ROOT\CLSID\{84D33554-6E4F-4A60-B3F2-4A409F361F8C}\LocalServer32 = WordPdfViewDemo.EXE

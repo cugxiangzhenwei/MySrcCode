@@ -1,0 +1,26 @@
+HKCR
+{
+	FileProUnity.FileProCom.1 = s 'FileProCom Class'
+	{
+		CLSID = s '{47ED8616-159C-45BC-8EA3-E77FEBEEF28F}'
+	}
+	FileProUnity.FileProCom = s 'FileProCom Class'
+	{		
+		CurVer = s 'FileProUnity.FileProCom.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {47ED8616-159C-45BC-8EA3-E77FEBEEF28F} = s 'FileProCom Class'
+		{
+			ProgID = s 'FileProUnity.FileProCom.1'
+			VersionIndependentProgID = s 'FileProUnity.FileProCom'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{9B0A1516-481B-4857-B8AA-A60260B8168A}'
+			Version = s '1.0'
+		}
+	}
+}

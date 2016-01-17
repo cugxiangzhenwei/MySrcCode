@@ -1,0 +1,29 @@
+// WordPdfViewDemo.idl : WordPdfViewDemo.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(WordPdfViewDemo.tlb)。
+
+[ uuid(6A9DA469-DC93-4C33-8B32-8202B57FCFD2), version(1.0) ]
+library WordPdfViewDemo
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CWordPdfViewDemoDoc 的主调度接口
+	
+	[ uuid(EAC5604D-2E09-41AB-B632-DCD3D12194C1) ]
+	dispinterface IWordPdfViewDemo
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CWordPdfViewDemoDoc 的类信息
+	
+	[ uuid(84D33554-6E4F-4A60-B3F2-4A409F361F8C) ]
+	coclass CWordPdfViewDemoDoc
+	{
+		[default] dispinterface IWordPdfViewDemo;
+	};
+};

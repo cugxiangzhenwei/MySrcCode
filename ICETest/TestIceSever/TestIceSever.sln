@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestIceSever", "TestIceSever\TestIceSever.vcxproj", "{D7CCC453-E8FD-4833-B4C9-15866301AE0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestIceClient", "TestIceClient\TestIceClient.vcxproj", "{826A906A-E29A-4F2D-B718-9D69D8D0675A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cal", "cal", "{35808BC6-4C7E-4E87-BFE8-B84D7BC1CC08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{4C659AF5-4504-4349-9169-249BBA370884}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IceCoreServer", "..\myicetest\IceCoreServer\IceCoreServer.vcxproj", "{BC12B60E-C1A4-48F2-97F4-BCB9EA919FCD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IceCoreClient", "IceCoreClient\IceCoreClient.vcxproj", "{25172FD7-FD9E-4EAF-9E72-B7229060658B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7CCC453-E8FD-4833-B4C9-15866301AE0A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D7CCC453-E8FD-4833-B4C9-15866301AE0A}.Debug|Win32.Build.0 = Debug|Win32
+		{D7CCC453-E8FD-4833-B4C9-15866301AE0A}.Release|Win32.ActiveCfg = Release|Win32
+		{D7CCC453-E8FD-4833-B4C9-15866301AE0A}.Release|Win32.Build.0 = Release|Win32
+		{826A906A-E29A-4F2D-B718-9D69D8D0675A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{826A906A-E29A-4F2D-B718-9D69D8D0675A}.Debug|Win32.Build.0 = Debug|Win32
+		{826A906A-E29A-4F2D-B718-9D69D8D0675A}.Release|Win32.ActiveCfg = Release|Win32
+		{826A906A-E29A-4F2D-B718-9D69D8D0675A}.Release|Win32.Build.0 = Release|Win32
+		{BC12B60E-C1A4-48F2-97F4-BCB9EA919FCD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC12B60E-C1A4-48F2-97F4-BCB9EA919FCD}.Debug|Win32.Build.0 = Debug|Win32
+		{BC12B60E-C1A4-48F2-97F4-BCB9EA919FCD}.Release|Win32.ActiveCfg = Release|Win32
+		{BC12B60E-C1A4-48F2-97F4-BCB9EA919FCD}.Release|Win32.Build.0 = Release|Win32
+		{25172FD7-FD9E-4EAF-9E72-B7229060658B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25172FD7-FD9E-4EAF-9E72-B7229060658B}.Debug|Win32.Build.0 = Debug|Win32
+		{25172FD7-FD9E-4EAF-9E72-B7229060658B}.Release|Win32.ActiveCfg = Release|Win32
+		{25172FD7-FD9E-4EAF-9E72-B7229060658B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{826A906A-E29A-4F2D-B718-9D69D8D0675A} = {35808BC6-4C7E-4E87-BFE8-B84D7BC1CC08}
+		{D7CCC453-E8FD-4833-B4C9-15866301AE0A} = {35808BC6-4C7E-4E87-BFE8-B84D7BC1CC08}
+		{BC12B60E-C1A4-48F2-97F4-BCB9EA919FCD} = {4C659AF5-4504-4349-9169-249BBA370884}
+		{25172FD7-FD9E-4EAF-9E72-B7229060658B} = {4C659AF5-4504-4349-9169-249BBA370884}
+	EndGlobalSection
+EndGlobal
