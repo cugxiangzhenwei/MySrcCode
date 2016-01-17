@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BatLib", "BatLib\BatLib.vcproj", "{275009CD-FF35-405C-AABA-61F81F909FE7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BatReName", "BatReName\BatReName.vcproj", "{5FDAF9CD-F55E-364D-96C5-2A20FBE2A337}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibTest", "LibTest\LibTest.vcproj", "{06142E83-3D34-4843-8F2C-42415C3F76D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{275009CD-FF35-405C-AABA-61F81F909FE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{275009CD-FF35-405C-AABA-61F81F909FE7}.Debug|Win32.Build.0 = Debug|Win32
+		{275009CD-FF35-405C-AABA-61F81F909FE7}.Release|Win32.ActiveCfg = Release|Win32
+		{275009CD-FF35-405C-AABA-61F81F909FE7}.Release|Win32.Build.0 = Release|Win32
+		{5FDAF9CD-F55E-364D-96C5-2A20FBE2A337}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5FDAF9CD-F55E-364D-96C5-2A20FBE2A337}.Debug|Win32.Build.0 = Debug|Win32
+		{5FDAF9CD-F55E-364D-96C5-2A20FBE2A337}.Release|Win32.ActiveCfg = Release|Win32
+		{5FDAF9CD-F55E-364D-96C5-2A20FBE2A337}.Release|Win32.Build.0 = Release|Win32
+		{06142E83-3D34-4843-8F2C-42415C3F76D5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{06142E83-3D34-4843-8F2C-42415C3F76D5}.Debug|Win32.Build.0 = Debug|Win32
+		{06142E83-3D34-4843-8F2C-42415C3F76D5}.Release|Win32.ActiveCfg = Release|Win32
+		{06142E83-3D34-4843-8F2C-42415C3F76D5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

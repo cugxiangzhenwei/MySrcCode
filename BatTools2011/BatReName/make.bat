@@ -1,0 +1,2 @@
+qmake -t vcapp
+pause
