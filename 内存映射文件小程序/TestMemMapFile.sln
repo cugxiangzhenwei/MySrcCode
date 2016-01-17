@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestMemMapFile", "TestMemMapFile\TestMemMapFile.vcproj", "{9813536B-FBB1-45C1-B610-DB951D374C88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9813536B-FBB1-45C1-B610-DB951D374C88}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9813536B-FBB1-45C1-B610-DB951D374C88}.Debug|Win32.Build.0 = Debug|Win32
+		{9813536B-FBB1-45C1-B610-DB951D374C88}.Release|Win32.ActiveCfg = Release|Win32
+		{9813536B-FBB1-45C1-B610-DB951D374C88}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
