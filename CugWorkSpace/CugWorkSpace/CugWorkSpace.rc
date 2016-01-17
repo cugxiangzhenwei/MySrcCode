@@ -1,0 +1,741 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <afxres.h>
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyle2007Aqua.rc"
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyle2007Luna.rc"
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyle2007Obsidian.rc"
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyle2007Silver.rc"
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyle2010White.rc"
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyleCarbon.rc"
+#include "D:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro\Styles\BCGPStyleScenic.rc"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""bcgprores.h""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyle2007Aqua.rc""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyle2007Luna.rc""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyle2007Obsidian.rc""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyle2007Silver.rc""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyle2010White.rc""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyleCarbon.rc""\r\n"
+    "#include ""D:\\Program Files (x86)\\BCGSoft\\BCGControlBarPro\\BCGCBPro\\Styles\\BCGPStyleScenic.rc""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\CugWorkSpace.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "#include ""BCGCBPro.rc""                               // BCGP ControlBar resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU
+BEGIN
+    POPUP "建模(&M)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              IDM_TASK_NEW
+        MENUITEM "打开(&O)\tCtrl+O",              IDM_TASK_OPEN
+        MENUITEM "保存",                          IDM_TASK_SAVE
+        MENUITEM "另存为",                         IDM_TASK_SAVEAS
+        MENUITEM "关闭",                          IDM_TASK_CLOSEALL
+        MENUITEM "属性",                          IDM_TASK_INFO
+        MENUITEM "发布",                          IDM_TASK_PUBLISH
+        POPUP "最近打开的模型"
+        BEGIN
+            MENUITEM "空",                           ID_32879
+        END
+        MENUITEM "退出",                          IDM_TASK_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏",                         IDM_VIEW_TOOLBARZ, CHECKED
+        MENUITEM "组建",                          IDM_VIEW_COMPONENT, CHECKED
+        MENUITEM "登录",                          IDM_VIEW_LOGIN, CHECKED
+        MENUITEM "结构树",                         IDM_BAR_TREE, CHECKED
+        MENUITEM "资源库",                         IDM_RES, CHECKED
+        POPUP "切换窗口"
+        BEGIN
+            MENUITEM "空",                           ID_32881
+        END
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "组建封装环境",                      IDM_TOOL_FLEXWARE
+    END
+    POPUP "运行(&R)"
+    BEGIN
+        MENUITEM "运行设计过程",                      IDM_TASK_RUN
+    END
+    POPUP "系统(&S)"
+    BEGIN
+        MENUITEM "作业管理",                        IDM_TOOL_HISTORY_MONITOR
+        MENUITEM "分布式资源管理",                     IDM_DISTRIBUTION
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助",                          IDM_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SVG_DLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN 
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_COMPONENT_LIB DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN 
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_JIANMO_COMPONENT_TREE DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN 
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_JIANMO_COMPONENT_LIST DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN 
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SVG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_COMPONENT_LIB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_JIANMO_COMPONENT_TREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_JIANMO_COMPONENT_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_SVGDLG         HTML                    "SvgDlg.htm"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "Office &2000",                ID_VIEW_APPLOOK_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS2005
+            MENUITEM "&Windows Native",             ID_VIEW_APPLOOK_WIN_XP
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_2007
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_2007_1
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_2007_2
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_2007_3
+            END
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS2008
+            MENUITEM "Visual Studio 20&10",         ID_VIEW_APPLOOK_VS2010
+            POPUP "Office 201&0"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_2010_1
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_2010_2
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_2010_3
+            END
+            MENUITEM "Window&s 7",                  ID_VIEW_APPLOOK_WIN7
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CugWorkSpace...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CugWorkSpaceTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Application Look"
+        BEGIN
+            MENUITEM "Office &2000",                ID_VIEW_APPLOOK_2000
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_XP
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS2005
+            MENUITEM "&Windows Native",             ID_VIEW_APPLOOK_WIN_XP
+            POPUP "Office 200&7"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_2007
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_2007_1
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_2007_2
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_2007_3
+            END
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS2008
+            MENUITEM "Visual Studio 20&10",         ID_VIEW_APPLOOK_VS2010
+            POPUP "Office 201&0"
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_2010_1
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_2010_2
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_2010_3
+            END
+            MENUITEM "Window&s 7",                  ID_VIEW_APPLOOK_WIN7
+        END
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CugWorkSpace...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT_MENU MENU
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_TOOLBAR MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "Standard Toolbar",            ID_VIEW_TOOLBAR
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR1
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR2
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR3
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR4
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR5
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR6
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR7
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR8
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR9
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR10
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+END
+
+IDR_POPUP_MDITABS MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "New &Horizontal Tab Group",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "New &Vertical Tab Group",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "Move to Ne&xt Tab Group",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "Move to P&revious Tab Group", ID_MDI_MOVE_TO_PREV_GROUP
+    END
+END
+
+IDR_POPUP_DROP_MDITABS MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "New &Horizontal Tab Group",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "New &Vertical Tab Group",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "Move to Ne&xt Tab Group",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "Move to P&revious Tab Group", ID_MDI_MOVE_TO_PREV_GROUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Cancel",                     ID_MDI_CANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CugWorkSpace"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "CugWorkSpace Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    PUSHBUTTON      "http://www.<MyCompany>.com",IDC_COMPANY_URL,40,36,119,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CugWorkSpace.ico"
+IDR_CugWorkSpaceTYPE    ICON                    "res\\CugWorkSpaceDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_TOOLBAR256          BITMAP                  "res\\Toolbar256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "004090"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CugWorkSpace.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "CugWorkSpace.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "CugWorkSpace"
+    IDR_CugWorkSpaceTYPE    "\nCugWorkSpace\nCugWorkSpace\n\n\nCugWorkSpace.Document\nCugWorkSpace.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "CugWorkSpace"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Send the document directly to the default printer without making changes\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_CUSTOMIZE       "Customize toolbars and menus.\nCustomize"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MAIN_TOOLBAR        "Standard"
+    IDS_WINDOWS_MANAGER     "&Windows..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_USER_TOOLBAR1   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR2   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR3   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR4   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR5   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR6   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR7   "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_USER_TOOLBAR8   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR9   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR10  "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_APPLOOK_2000    "Activate Office 2000 application look\nOffice 2000 Look"
+    ID_VIEW_APPLOOK_XP      "Activate Office XP application look\nOffice XP Look"
+    ID_VIEW_APPLOOK_2003    "Activate Office 2003 application look\nOffice 2003 Look"
+    ID_VIEW_APPLOOK_WIN_XP  "Activate Windows native application look\nWindows Native Look"
+    ID_VIEW_APPLOOK_VS2005  "Activate Visual Studio 2005 application look\nVS 2005 Look"
+    ID_VIEW_APPLOOK_2007    "Activate Office 2007 application look\nOffice 2007 Look (Blue)"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_APPLOOK_2007_1  "Activate Office 2007 application look\nOffice 2007 Look (Black)"
+    ID_VIEW_APPLOOK_2007_2  "Activate Office 2007 application look\nOffice 2007 Look (Silver)"
+    ID_VIEW_APPLOOK_2007_3  "Activate Office 2007 application look\nOffice 2007 Look (Aqua)"
+    ID_VIEW_APPLOOK_VS2008  "Activate Visual Studio 2008 application look\nVS 2008 Look"
+    ID_VIEW_APPLOOK_VS2010  "Activate Visual Studio 2010 application look\nVS 2010 Look"
+    ID_VIEW_APPLOOK_2010_1  "Activate Office 2010 application look\nOffice 2010 Look (Blue)"
+    ID_VIEW_APPLOOK_2010_2  "Activate Office 2010 application look\nOffice 2010 Look (Black)"
+    ID_VIEW_APPLOOK_2010_3  "Activate Office 2010 application look\nOffice 2010 Look (Silver)"
+    ID_VIEW_APPLOOK_WIN7    "Activate Windows 7 application look\nWindows 7 Look"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1251)
+#include "res\CugWorkSpace.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+#include "BCGCBPro.rc"                               // BCGP ControlBar resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

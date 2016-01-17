@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "很好并行NewXXR-WaveFusion14", "很好并行NewXXR-WaveFusion14.vcproj", "{8CD4C40B-68D5-4888-8D32-037EEB9E827A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CD4C40B-68D5-4888-8D32-037EEB9E827A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CD4C40B-68D5-4888-8D32-037EEB9E827A}.Debug|Win32.Build.0 = Debug|Win32
+		{8CD4C40B-68D5-4888-8D32-037EEB9E827A}.Release|Win32.ActiveCfg = Release|Win32
+		{8CD4C40B-68D5-4888-8D32-037EEB9E827A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

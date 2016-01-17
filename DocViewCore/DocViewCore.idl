@@ -1,0 +1,54 @@
+// DocViewCore.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(DocViewCore.tlb)，该类型库将成为
+// DocViewCore.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(02BE3A24-5B5D-4752-9F09-941DAB2B2C00), version(1.0),
+  control ]
+library DocViewCoreLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CDocViewCoreCtrl 的主调度接口
+	[ 
+		uuid(B890C406-EAD1-44FF-AF3B-4FD969C767F0)	
+	]
+	dispinterface _DDocViewCore
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1)] VARIANT_BOOL OpenDocFile(BSTR strDocFile);
+			[id(2), helpstring("选择文件对话框")] BSTR SelectFile(void);
+	};
+
+	//  CDocViewCoreCtrl 的事件调度接口
+
+	[ 
+		uuid(13A00996-F84A-4DD7-9E74-02F42E1769C5)	
+	]
+	dispinterface _DDocViewCoreEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+			[id(1)] void DocumentOpened(BSTR strDocPath, BSTR strDocTitle);
+	};
+
+	//  CDocViewCoreCtrl 的类信息
+	[
+		uuid(2F519FBA-91E5-439E-8C46-9318EC43A7ED)
+	]
+	coclass DocViewCore
+	{
+		[default] dispinterface _DDocViewCore;
+		[default, source] dispinterface _DDocViewCoreEvents;
+	};
+
+};

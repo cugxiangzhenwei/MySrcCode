@@ -1,0 +1,210 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ”¢”Ô(”°∂») resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENN)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_INDIA
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENN)\r\n"
+    "LANGUAGE 9, 16\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\PreviewApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PreviewApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PreviewApp"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PreviewApp Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_PREVIEWAPP_DIALOG DIALOGEX 0, 0, 562, 304
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PreviewApp"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Browse ...",IDC_BUTTON_BROWSE,71,259,45,19
+    GROUPBOX        "Preview",IDC_STATIC,16,16,234,268
+    GROUPBOX        "Handlers",IDC_STATIC,256,16,290,268
+    LTEXT           "Available Handlers",IDC_STATIC,262,32,104,11
+    LTEXT           "Associations",IDC_STATIC,267,105,161,11
+    GROUPBOX        "",IDC_PREVIEW,26,43,218,182,BS_FLAT
+    PUSHBUTTON      "&Next",IDC_BUTTON_NEXT,134,259,45,19,BS_BITMAP
+    CONTROL         "",IDC_LIST_PREVIEWERS_INSTALLED,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,262,45,268,51
+    CONTROL         "",IDC_LIST_ASSOCIATIONS,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,262,121,268,82
+    LTEXT           "Showing",IDC_STATIC,26,27,45,14
+    LTEXT           "None",IDC_STATIC_NOW_SHOWING,72,27,169,13
+    LTEXT           "NO PREVIEWR EXISTS FOR THIS FILE",IDC_STATIC,66,136,140,36
+    LTEXT           "Previewer Used",IDC_STATIC_PREVIEWER_USED,26,232,218,17
+    EDITTEXT        IDC_EDIT_EXTN,274,234,47,12,ES_AUTOHSCROLL
+    GROUPBOX        "Edit",IDC_STATIC,262,220,276,50
+    COMBOBOX        IDC_COMBO1,327,234,185,60,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Set",IDC_BUTTON_SET,516,234,18,13
+    LTEXT           "Enter the extension and Choose Previewer",IDC_STATIC_EDIT_STATUS,274,255,261,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PreviewApp.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "PreviewApp.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PREVIEWAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 555
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About PreviewApp..."
+END
+
+#endif    // ”¢”Ô(”°∂») resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENN)
+LANGUAGE 9, 16
+#pragma code_page(1252)
+#include "res\PreviewApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

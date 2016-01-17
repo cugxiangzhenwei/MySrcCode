@@ -1,0 +1,438 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MeYe.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MeYe.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MeYe"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MeYe 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MEYE_DIALOG DIALOGEX 0, 0, 481, 308
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "Arial"
+BEGIN
+    PUSHBUTTON      "设置",IDC_BUTTON_CONF,333,1,50,14
+    PUSHBUTTON      "最小化",IDC_BUTTON_MIN,386,0,50,14
+    PUSHBUTTON      "关闭",IDC_BUTTON_CLOSE,421,1,50,14
+    PUSHBUTTON      "微博自动",IDC_BUTTON_MAIN_RAL,14,28,50,44
+    PUSHBUTTON      "微博设置",IDC_BUTTON_MAIN_HISTORY,71,28,50,44
+    PUSHBUTTON      "价格监控",IDC_BUTTON_MAIN_C_CONFIG,133,28,50,44
+    PUSHBUTTON      "购物比价",IDC_BUTTON_MAIN_S_CONFIG,197,27,50,44
+    PUSHBUTTON      "优惠券",IDC_BUTTON_MAIN_S_EXIT,267,27,50,44
+    EDITTEXT        IDC_EDIT_URL_SEARCH,317,30,97,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "搜索商品",IDC_BUTTON_SEARCH,422,29,46,14
+END
+
+IDD_DIALOG_S_CONF_DLG DIALOGEX 0, 0, 394, 230
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_WBUSER,56,19,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WBPWD,167,19,77,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "绑定",IDC_BUTTON_BIND,263,19,50,14
+    CONTROL         "Check1",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,49,8,8,WS_EX_STATICEDGE
+    CONTROL         "Check1",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,63,8,8,WS_EX_STATICEDGE
+    CONTROL         "Check1",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,79,8,8,WS_EX_STATICEDGE
+    CONTROL         "Check1",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,92,8,8,WS_EX_STATICEDGE
+    CONTROL         "Check1",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,109,8,8,WS_EX_STATICEDGE
+    CONTROL         "Check1",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,127,8,8,WS_EX_STATICEDGE
+    PUSHBUTTON      "保存",IDC_BUTTON_S_SAVE,83,188,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_S_CANCLE,181,188,50,14
+    LTEXT           "自动发新闻",IDC_STATIC_32,132,78,41,8
+    LTEXT           "互粉功能开启",IDC_STATIC_30,132,51,49,8
+    LTEXT           "自动发笑话",IDC_STATIC_33,132,92,41,8
+    LTEXT           "自动发微言大义",IDC_STATIC_37,131,111,57,8
+    LTEXT           "自动发搞笑配图",IDC_STATIC_38,131,128,57,8
+    LTEXT           "软件说明:开机后请先点主界面登陆，完成后点自动发微薄按妞后，便可以了,以上是默认配置不推荐",
+                    IDC_STATIC_43,25,143,352,8
+    LTEXT           "邀请好友来互粉",IDC_STATIC_31,132,65,57,8
+    LTEXT           "用户名",IDC_STATIC_50,26,21,25,8
+    LTEXT           "密码",IDC_STATIC_51,145,22,17,8
+    CONTROL         "Check1",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,233,93,8,8,WS_EX_STATICEDGE
+    LTEXT           "经典微语录",IDC_STATIC_42,254,94,41,8
+    CONTROL         "Check1",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,233,112,8,8,WS_EX_STATICEDGE
+    LTEXT           "自动发英语经典",IDC_STATIC_44,254,113,57,8
+    LTEXT           "修改，软件启动后，平均10分钟发一次笑话，30分钟发一次新闻，25分钟一次互汾，20分钟一次邀请",
+                    IDC_STATIC_45,25,153,352,8
+    LTEXT           "自己的粉丝好友来互粉,郑重提示，关注超过2000后互粉功能可以关闭，开着也没用，因为新浪设置",
+                    IDC_STATIC_46,25,163,352,8
+    LTEXT           "了最多只让关注2000个，诚信第一,互粉第二",IDC_STATIC_47,
+                    25,174,352,8
+END
+
+IDD_DIALOG_VIDEO_CTRL DIALOG DISCARDABLE  0, 0, 372, 208
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,0,0,372,207
+END
+
+IDD_DIALOG_C_CONF_DLG DIALOG DISCARDABLE  0, 0, 263, 180
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "保存",IDC_BUTTON_C_SAVE,97,136,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_C_CANCE,184,136,50,14
+    LTEXT           "终端别名:",IDC_STATIC_C_31,92,84,46,8
+    EDITTEXT        IDC_EDIT_C_31,143,82,81,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_TAB_C_CONFIG,16,24,138,8
+    LTEXT           "设备端口:",IDC_STATIC_C_1,89,56,35,8
+    LTEXT           "服务端口:",IDC_STATIC_C_2,89,84,35,8
+    LTEXT           "播放缓冲:",IDC_STATIC_C_3,90,109,35,8
+    EDITTEXT        IDC_EDIT_C_1,168,52,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_2,168,80,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_3,167,106,68,14,ES_AUTOHSCROLL
+    LTEXT           "原始密码:",IDC_STATIC_C_21,75,56,35,8
+    LTEXT           "新密码:",IDC_STATIC_C_22,75,81,27,8
+    LTEXT           "重新输入新密码:",IDC_STATIC_C_23,74,109,59,8
+    EDITTEXT        IDC_EDIT_C_21,188,52,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_22,188,80,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_23,187,106,68,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_LEFT_CLIENT DIALOG DISCARDABLE  0, 0, 191, 206
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT_DEV,140,185,30,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "新增",IDC_BUTTON_ADD_DEV,145,166,29,14,NOT WS_VISIBLE
+    PUSHBUTTON      "微薄登陆",IDC_BUTTON_WEIBO_LOGON,18,15,52,14
+    PUSHBUTTON      "自动发送",IDC_BUTTON_STAR,18,32,51,14
+    PUSHBUTTON      "软件说明书",IDC_BUTTON_END,18,151,51,14
+    PUSHBUTTON      "互粉率查询",IDC_BUTTON_HF,18,187,51,14
+    PUSHBUTTON      "关注",IDC_BUTTON_QUN1,18,69,51,14
+    PUSHBUTTON      "粉丝",IDC_BUTTON_QUN2,18,89,51,14
+    PUSHBUTTON      "微搏",IDC_BUTTON_QUN3,18,110,51,14
+    PUSHBUTTON      "互粉指南",IDC_BUTTON_QUESTION,18,129,51,14
+    LTEXT           "推荐应用，非本作者所写",IDC_STATIC_DETAIL,3,172,89,8
+    PUSHBUTTON      "我的返利",IDC_BUTTON_FANLI,18,51,50,14
+END
+
+IDD_DIALOG_YHHY DIALOG DISCARDABLE  0, 0, 262, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邀请好友来互粉"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,137,50,14
+    CONTROL         "List3",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,24,13,200,107
+END
+
+IDD_DIALOG_PRICEUP DIALOG DISCARDABLE  0, 0, 439, 204
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "添加商品",IDC_BUTTON_ADD_PROID,294,170,50,14
+    LTEXT           "输入监控的商品地址",IDC_STATIC_1,2,174,72,8
+    EDITTEXT        IDC_EDIT_URL_PRICE_UP,78,171,207,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_EXPLORER_PRICEUP,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,1,14,
+                    420,143
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,88,193,8,8
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,137,194,9,8
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,190,194,8,8
+    CONTROL         "",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,244,194,8,8
+    LTEXT           "商品监控周期设置",IDC_STATIC_2,2,193,69,8
+    PUSHBUTTON      "已支持商城",IDC_BUTTON_LET,293,188,50,14
+    CONTROL         "",IDC_CHECK_TB_WB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    348,171,10,8
+    PUSHBUTTON      "关注网购者",IDC_BUTTON_FLOOWWGZ,347,188,53,14
+    LTEXT           "一天",IDC_STATIC_3,99,193,17,8
+    LTEXT           "三天",IDC_STATIC_4,148,193,17,8
+    LTEXT           "五天",IDC_STATIC_5,202,194,17,8
+    LTEXT           "一周",IDC_STATIC_6,254,194,17,8
+    LTEXT           "同步新浪微博",IDC_STATIC_7,358,172,49,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MeYe Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MeYe\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MeYe.EXE\0"
+            VALUE "ProductName", "MeYe 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MEYE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_DIALOG_S_CONF_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_DIALOG_VIDEO_CTRL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_DIALOG_C_CONF_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_LEFT_CLIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_YHHY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_DIALOG_PRICEUP, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_LINE MENU DISCARDABLE 
+BEGIN
+    POPUP "线路选择"
+    BEGIN
+        MENUITEM "线路选择一",                  ID_MENU_LINE_1
+        MENUITEM "线路选择二",                  ID_MENU_LINE_2
+        MENUITEM "线路选择三",                  ID_MENU_LINE_3
+        MENUITEM "线路选择四",                  ID_MENU_LINE_4
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_VIDEO_CTRL DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x4ce5, 0x0000, 0x2aca, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_DIALOG_PRICEUP DLGINIT
+BEGIN
+    IDC_EXPLORER_PRICEUP, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x56d1, 0x0000, 0x1d8f, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MeYe(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MeYe.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

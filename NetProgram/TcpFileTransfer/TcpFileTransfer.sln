@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcpClient", "TcpClient\TcpClient.vcxproj", "{164E9F39-B497-475B-8A4B-E09E1BDDDEEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcpSrv", "TcpSrv\TcpSrv.vcxproj", "{41EE40C6-C4B3-4927-BDD7-F25ED67F784E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{164E9F39-B497-475B-8A4B-E09E1BDDDEEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{164E9F39-B497-475B-8A4B-E09E1BDDDEEA}.Debug|Win32.Build.0 = Debug|Win32
+		{164E9F39-B497-475B-8A4B-E09E1BDDDEEA}.Release|Win32.ActiveCfg = Release|Win32
+		{164E9F39-B497-475B-8A4B-E09E1BDDDEEA}.Release|Win32.Build.0 = Release|Win32
+		{41EE40C6-C4B3-4927-BDD7-F25ED67F784E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{41EE40C6-C4B3-4927-BDD7-F25ED67F784E}.Debug|Win32.Build.0 = Debug|Win32
+		{41EE40C6-C4B3-4927-BDD7-F25ED67F784E}.Release|Win32.ActiveCfg = Release|Win32
+		{41EE40C6-C4B3-4927-BDD7-F25ED67F784E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

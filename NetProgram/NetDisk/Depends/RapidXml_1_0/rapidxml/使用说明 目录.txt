@@ -1,0 +1,24 @@
+
+1、RapidXml 最新版本 1.1.3  本目录版本 1.0
+
+2、RapidXml使用：
+
+			包含头文件即可使用
+			#include <iostream>  
+			#include "rapidxml.hpp"  
+			#include "rapidxml_utils.hpp"  
+			#include "rapidxml_print.hpp"  
+			using namespace rapidxml;
+
+3、简单使用方法 见 “RapidXml使用方法.htm”
+
+4、“manual.html” 是官方的页面
+
+5、本人一个xpdl文件（12个流程节点，50个组件节点，10000个参数节点） 采用RapidXml默认方式解析时间在500毫秒左右，
+
+	 保存这样一个文件根据几种保存方式不同也在200毫秒至一秒钟时间，更新第一个节点一万次需要的时间在250毫秒左右，
+	 
+	 更新最后一个节点一万次需要的时间在400毫秒左右，更新中间某一个节点一万次需要的时间在370毫秒左右。
+	 
+	 
+6、RapidXml读取的内容的编码与Xml文件的编码一致，如需要需自己转换

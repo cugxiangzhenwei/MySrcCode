@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: iconpro - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ IF NOT EXIST obj md obj
+ cl -Zi -Od -DDEBUG -c -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -nologo -D_X86_=1  -DWIN32 -D_WIN32 -W3 -D_WINNT -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DWINVER=0x0500 -Fo.\obj\\ -DNT -DWIN -DWIN32 iconpro.c
+iconpro.c
+ IF NOT EXIST obj md obj
+ cl -Zi -Od -DDEBUG -c -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -nologo -D_X86_=1  -DWIN32 -D_WIN32 -W3 -D_WINNT -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DWINVER=0x0500 -Fo.\obj\\ -DNT -DWIN -DWIN32 mdichild.c
+mdichild.c
+ IF NOT EXIST obj md obj
+ cl -Zi -Od -DDEBUG -c -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -nologo -D_X86_=1  -DWIN32 -D_WIN32 -W3 -D_WINNT -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DWINVER=0x0500 -Fo.\obj\\ -DNT -DWIN -DWIN32 icons.c
+icons.c
+ IF NOT EXIST obj md obj
+ cl -Zi -Od -DDEBUG -c -DCRTAPI1=_cdecl -DCRTAPI2=_cdecl -nologo -D_X86_=1  -DWIN32 -D_WIN32 -W3 -D_WINNT -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DWINVER=0x0500 -Fo.\obj\\ -DNT -DWIN -DWIN32 dib.c
+dib.c
+ rc -r -fo .\obj\iconpro.res iconpro.rc
+ link /DEBUG:full /DEBUGTYPE:cv  /INCREMENTAL:NO /NOLOGO -subsystem:windows,5.0 -out:iconpro.exe   obj\iconpro.obj  obj\mdichild.obj  obj\icons.obj  obj\dib.obj  obj\iconpro.res kernel32.lib  ws2_32.lib mswsock.lib advapi32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib shell32.lib
+ Start /Wait Hcrtf iconpro.hpj
+
+
+
+<h3>Results</h3>
+iconpro.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ServerMain.cpp" />
+    <ClCompile Include="..\Common\CommonFun.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UsrDefine.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="ProThreadServer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ReceiveToServer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SendToClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DataJsDefine.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFileListToClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CodeFunc.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SqliteBase.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LogTools.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerCopyFile.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerReNameFile.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerDeleteFile.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerMoveFile.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerNewDir.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CrashHandler.cpp" />
+    <ClCompile Include="..\Common\DesUtil.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CommonFun.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UsrDefine.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataJsDefine.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CodeFunc.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SqliteBase.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LogTools.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CrashHandler.h" />
+    <ClInclude Include="..\Common\DesUtil.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_common">
+      <UniqueIdentifier>{2c1364a8-ba6f-4c82-a8de-9878dbb2773a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{e63504a6-7680-470a-960e-c7efb705124f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{5ee4139d-4285-40e4-ba65-b9c7b645b4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlite">
+      <UniqueIdentifier>{5d492b90-336e-41d0-9410-8579e1747528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="user">
+      <UniqueIdentifier>{3427b0ae-48a6-427a-90a4-25311a6fb62a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetDiskServer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NetDiskServer.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

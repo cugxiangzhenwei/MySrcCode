@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ClientMain.cpp" />
+    <ClCompile Include="..\Common\UsrDefine.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommonFun.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DataJsDefine.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\DownToClient.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\GetNetDiskFileList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\UploadToServer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\user.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LogTools.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DesUtil.cpp">
+      <Filter>_common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\UsrDefine.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonFun.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataJsDefine.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LogTools.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DesUtil.h">
+      <Filter>_common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_common">
+      <UniqueIdentifier>{82edc680-d642-468c-8b51-70bffaaf1c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{3d43f40e-670b-4e49-b28a-a14454a93330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{d9335930-be95-446c-8445-efe7bdbfd784}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetDiskClient.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NetDiskClient.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

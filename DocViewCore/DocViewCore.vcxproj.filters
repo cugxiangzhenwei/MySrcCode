@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="word">
+      <UniqueIdentifier>{8f3a0a5c-0afe-4454-9c5c-6a34d5b3b885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdf">
+      <UniqueIdentifier>{d279ddaf-4016-4e8b-ada2-ac640cde075f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="DocViewCore.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="DocViewCore.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="DocViewCoreCtrl.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocViewCore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocViewCoreCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocViewCorePropPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocViewDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf\CDCAJAX.cpp">
+      <Filter>pdf</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewMainDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocViewCore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocViewCoreCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocViewCorePropPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocViewDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="word\CDocument0.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="word\CDocuments.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="word\CWordApplication.h">
+      <Filter>word</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf\CRadaeePDFDocument.h">
+      <Filter>pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf\CDPdfview.h">
+      <Filter>pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf\CAcroAXDocShim.h">
+      <Filter>pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf\CDCAJAX.h">
+      <Filter>pdf</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviewMainDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DocViewCore.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="DocViewCore.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="网盘功能">
+      <UniqueIdentifier>{9128fe29-60b6-4997-b42d-b4cd4fdf5c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网盘功能\_common">
+      <UniqueIdentifier>{b238c22f-3b0f-4220-b6c5-b74b2597b272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网盘功能\core">
+      <UniqueIdentifier>{935f5be4-79fa-480b-9be7-4b9e11ab47ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网盘功能\ThreadPool">
+      <UniqueIdentifier>{38fadbf1-4b9b-4525-be11-d172b08e8a66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\NetDiskUI.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NetDiskUI.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetDiskUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetDiskUIDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinBtn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageNetDisk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageXiangCe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonFun.h">
+      <Filter>网盘功能\_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DataJsDefine.h">
+      <Filter>网盘功能\_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LogTools.h">
+      <Filter>网盘功能\_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\UsrDefine.h">
+      <Filter>网盘功能\_common</Filter>
+    </ClInclude>
+    <ClInclude Include="NetDiskOperation.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSelectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoginMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageRegister.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageLogin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ThreadPool\PoolThread.h">
+      <Filter>网盘功能\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ThreadPool\TaskBase.h">
+      <Filter>网盘功能\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ThreadPool\ThreadPoolManager.h">
+      <Filter>网盘功能\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadTask.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadTask.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadDirRecusion.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadDirTask.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CrashHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFileTask.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CodeFunc.h">
+      <Filter>网盘功能\_common</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSerialization.h">
+      <Filter>网盘功能</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\DesUtil.h">
+      <Filter>网盘功能\_common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetDiskUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetDiskUIDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinBtn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageNetDisk.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageXiangCe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommonFun.cpp">
+      <Filter>网盘功能\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DataJsDefine.cpp">
+      <Filter>网盘功能\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LogTools.cpp">
+      <Filter>网盘功能\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\UsrDefine.cpp">
+      <Filter>网盘功能\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSelectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoginMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageRegister.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageLogin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ThreadPool\PoolThread.cpp">
+      <Filter>网盘功能\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ThreadPool\TaskBase.cpp">
+      <Filter>网盘功能\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ThreadPool\ThreadPoolManager.cpp">
+      <Filter>网盘功能\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadTask.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadTask.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="NetDiskOperation.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\DownToClient.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\GetNetDiskFileList.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\UploadToServer.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\user.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\NetDiskClientCommon\ClientNewDir.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadDirRecusion.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadDirTask.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CrashHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDeleteFile.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFileTask.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CodeFunc.cpp">
+      <Filter>网盘功能\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientReNameFile.cpp">
+      <Filter>网盘功能\core</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSerialization.cpp">
+      <Filter>网盘功能</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\DesUtil.cpp">
+      <Filter>网盘功能\_common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetDiskUI.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
