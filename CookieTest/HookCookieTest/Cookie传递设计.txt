@@ -1,0 +1,19 @@
+一. 进程间Cookie同步方案
+1. 相关对象：Cookie获取者（主）Cookie使用者（客）
+   所有Cookie使用者窗口建立后,设置窗口标记，约定为"use_hook_cookie"
+2. Cookie获取者向所有具有此标识的窗口发送CopyData消息,消息ID为 WM_CD_SETCOOKIE = WM_USER+1
+3. Cookie使用者收到 CD_SETCOOKIE消息后设置Cookie到自己程序内
+
+二. Cookie使用者后登录的处理
+当Cookie获取者登录一段时间后,Cookie使用者启动，这时需要从Cookie获取者那里获取启动后所有设置的Cookie,这样才能保证使用者和获取者Cookie的一致性
+因此设计为：Cookie获取者将所有Cookie保存在内存，使用者登录后给获取者发送CopyData消息,消息ID为 WM_CD_GETCOOKIE = WM_USER+2，获取者再查找窗口,发送所有保存的Cookie到使用者
+
+三. 存在的问题
+以上方案主从关系过于明确，而在实际运用中，我们期望的是从任何一个进程登录系统后，其他进程都可以共享该进程的Cookie，而不需要输入用户名密码进行登录
+
+
+
+
+
+
+
